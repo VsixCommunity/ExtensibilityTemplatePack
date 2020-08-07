@@ -1,6 +1,6 @@
 # VSIX Item Templates
 
-[![Build status](https://ci.appveyor.com/api/projects/status/4pha1svkn0aqg3u4?svg=true)](https://ci.appveyor.com/project/madskristensen/tweakster)
+[![Build status](https://ci.appveyor.com/api/projects/status/g3ro787tkr2a106m?svg=true)](https://ci.appveyor.com/project/madskristensen/vsixitemtemplates)
 
 Awesome item templates for VSIX development
 

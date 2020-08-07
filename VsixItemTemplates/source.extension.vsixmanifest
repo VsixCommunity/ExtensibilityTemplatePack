@@ -4,6 +4,7 @@
         <Identity Id="88049e1e-62f2-4ea2-851f-9ddb2de37f41" Version="1.0" Language="en-US" Publisher="Mads Kristensen" />
         <DisplayName>Vsix Item Templates</DisplayName>
         <Description xml:space="preserve">Awesome item templates for VSIX development</Description>
+        <License>Resources\LICENSE</License>
         <Icon>Resources\Icon.png</Icon>
         <PreviewImage>Resources\Icon.png</PreviewImage>
         <Tags>vsix, extension, template</Tags>
