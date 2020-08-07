@@ -1,0 +1,38 @@
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <!-- Update these properties -->
+    <TemplateID>Vsix.TextviewCreationListener</TemplateID>
+    <DefaultName>TextviewCreationListener.cs</DefaultName>
+    <Name>IWpfTextviewCreationListener</Name>
+    <Description>Creates a class that implements the IWpfTextviewCreationListener interface.</Description>
+    <SortOrder>2000</SortOrder>
+
+    <!-- Don't update these -->
+    <Icon>icon.ico</Icon>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <AppliesTo>VSIX + CSharp</AppliesTo>
+    <ShowByDefault>false</ShowByDefault>
+    <RequiredFrameworkVersion>4.6</RequiredFrameworkVersion>
+    <ProjectType>CSharp</ProjectType>
+  </TemplateData>
+
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>System.ComponentModel.Composition</Assembly>
+      </Reference>
+    </References>
+    
+    <ProjectItem ReplaceParameters="true">TextviewCreationListener.cs</ProjectItem>
+    
+    <CustomParameters>
+      <CustomParameter Name="$AddVsixManifestAsset$" Value="MefComponentFromSameProject" />
+    </CustomParameters>
+
+    <WizardExtension>
+      <Assembly>Microsoft.Vsix.TemplatesPackage, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+      <FullClassName>Microsoft.Vsix.TemplatesPackage.VsixWizard</FullClassName>
+    </WizardExtension>
+  </TemplateContent>
+
+</VSTemplate>

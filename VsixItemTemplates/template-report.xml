@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TemplateReport>
+  <ItemTemplates>
+    <ItemTemplate Path="ItemTemplates\TextviewCreationListener\_Definitions\CSharp.vstemplate" Name="IWpfTextviewCreationListener" Description="Creates a class that implements the IWpfTextviewCreationListener interface." ProjectType="CSharp" ProjectSubType="" />
+    <ItemTemplate Path="ItemTemplates\StaticCommand\_Definitions\CSharp.vstemplate" Name="Static Async Command" Description="Creates a simple static command handler class." ProjectType="CSharp" ProjectSubType="" />
+  </ItemTemplates>
+  <ProjectTemplates />
+  <Snippets />
+</TemplateReport>

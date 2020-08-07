@@ -1,0 +1,23 @@
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <!-- Update these properties -->
+    <TemplateID>c8635ce7-fcdf-49e1-9b82-cf7dd578ecce</TemplateID>
+    <DefaultName>Command.cs</DefaultName>
+    <Name>Static Async Command</Name>
+    <Description>Creates a simple static command handler class.</Description>
+    <SortOrder>2010</SortOrder>
+
+    <!-- Don't update these -->
+    <Icon>icon.ico</Icon>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <AppliesTo>VSIX + CSharp</AppliesTo>
+    <ShowByDefault>false</ShowByDefault>
+    <RequiredFrameworkVersion>4.6</RequiredFrameworkVersion>
+    <ProjectType>CSharp</ProjectType>
+  </TemplateData>
+
+  <TemplateContent>     
+    <ProjectItem ReplaceParameters="true">StaticCommand.cs</ProjectItem>
+  </TemplateContent>
+
+</VSTemplate>
