@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Text.Editor.Commanding;
 using Microsoft.VisualStudio.Utilities;
 
-namespace Tweakster.Tweaks.CodeCleanupOnFormat
+namespace $rootnamespace$
 {
     [Export(typeof(ICommandHandler))]
     [Name(nameof($safeitemname$))]

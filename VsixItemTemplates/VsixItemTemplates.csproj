@@ -50,6 +50,7 @@
     <None Include="ItemTemplates\StaticCommand\StaticCommand.cs" />
     <None Include="ItemTemplates\EditorCommandHandler\EditorCommandHandler.cs" />
     <None Include="ItemTemplates\TextviewCreationListener\TextviewCreationListener.cs" />
+    <None Include="ItemTemplates\EditorCommandBinding\EditorCommandBinding.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -71,6 +72,11 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="ItemTemplates\EditorCommandBinding\Icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ItemTemplates\EditorCommandBinding\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\EditorCommandBinding\_preprocess.xml" />
     <Content Include="ItemTemplates\StaticCommand\Icon.ico" />
     <Content Include="ItemTemplates\StaticCommand\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\StaticCommand\_preprocess.xml" />

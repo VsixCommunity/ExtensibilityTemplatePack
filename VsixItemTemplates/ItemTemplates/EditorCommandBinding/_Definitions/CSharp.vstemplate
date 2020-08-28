@@ -1,0 +1,30 @@
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <!-- Update these properties -->
+    <TemplateID>Vsix.EditorCommandBinding</TemplateID>
+    <DefaultName>MyCommandArgs.cs</DefaultName>
+    <Name>Editor Command Binding</Name>
+    <Description>Creates an EditorCommandArgs implemenatation used by an Editor Command Handler.</Description>
+    <SortOrder>2021</SortOrder>
+
+    <!-- Don't update these -->
+    <Icon>icon.ico</Icon>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <AppliesTo>VSIX + CSharp</AppliesTo>
+    <ShowByDefault>false</ShowByDefault>
+    <RequiredFrameworkVersion>4.6</RequiredFrameworkVersion>
+    <ProjectType>CSharp</ProjectType>
+  </TemplateData>
+
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>System.ComponentModel.Composition</Assembly>
+      </Reference>
+    </References>
+    
+    <ProjectItem ReplaceParameters="true">EditorCommandBinding.cs</ProjectItem>
+
+ </TemplateContent>
+
+</VSTemplate>
