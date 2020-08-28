@@ -3,7 +3,7 @@
     <!-- Update these properties -->
     <TemplateID>Vsix.TextviewCreationListener</TemplateID>
     <DefaultName>TextviewCreationListener.cs</DefaultName>
-    <Name>IWpfTextviewCreationListener</Name>
+    <Name>WPF Textview Creation Listener</Name>
     <Description>Creates a class that implements the IWpfTextviewCreationListener interface.</Description>
     <SortOrder>2000</SortOrder>
 
