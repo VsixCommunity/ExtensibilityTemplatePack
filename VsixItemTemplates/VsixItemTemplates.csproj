@@ -47,8 +47,9 @@
     <TemplateBuilderTargets Condition=" '$(TemplateBuilderTargets)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\..\packages\TemplateBuilder.1.1.6.1\tools\ligershark.templates.targets ))</TemplateBuilderTargets>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ItemTemplates\StaticCommand\StaticCommand.cs" />
-    <Compile Include="ItemTemplates\TextviewCreationListener\TextviewCreationListener.cs" />
+    <None Include="ItemTemplates\StaticCommand\StaticCommand.cs" />
+    <None Include="ItemTemplates\EditorCommandHandler\EditorCommandHandler.cs" />
+    <None Include="ItemTemplates\TextviewCreationListener\TextviewCreationListener.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -73,12 +74,21 @@
     <Content Include="ItemTemplates\StaticCommand\Icon.ico" />
     <Content Include="ItemTemplates\StaticCommand\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\StaticCommand\_preprocess.xml" />
+    <Content Include="ItemTemplates\EditorCommandHandler\Icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ItemTemplates\EditorCommandHandler\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\EditorCommandHandler\_preprocess.xml" />
     <Content Include="ItemTemplates\TextviewCreationListener\Icon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="ItemTemplates\TextviewCreationListener\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\TextviewCreationListener\_preprocess.xml" />
+    <Content Include="registry.pkgdef">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="Resources\Icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
