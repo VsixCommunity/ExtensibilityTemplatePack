@@ -51,6 +51,7 @@
     <None Include="ItemTemplates\EditorCommandHandler\EditorCommandHandler.cs" />
     <None Include="ItemTemplates\TextviewCreationListener\TextviewCreationListener.cs" />
     <None Include="ItemTemplates\EditorCommandBinding\EditorCommandBinding.cs" />
+    <None Include="ItemTemplates\Snippet\Snippet.snippet" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -77,6 +78,7 @@
     </Content>
     <Content Include="ItemTemplates\EditorCommandBinding\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\EditorCommandBinding\_preprocess.xml" />
+    <Content Include="ItemTemplates\Snippet\Icon.png" />
     <Content Include="ItemTemplates\StaticCommand\Icon.ico" />
     <Content Include="ItemTemplates\StaticCommand\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\StaticCommand\_preprocess.xml" />
@@ -85,6 +87,8 @@
     </Content>
     <Content Include="ItemTemplates\EditorCommandHandler\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\EditorCommandHandler\_preprocess.xml" />
+    <Content Include="ItemTemplates\Snippet\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\Snippet\_preprocess.xml" />
     <Content Include="ItemTemplates\TextviewCreationListener\Icon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>

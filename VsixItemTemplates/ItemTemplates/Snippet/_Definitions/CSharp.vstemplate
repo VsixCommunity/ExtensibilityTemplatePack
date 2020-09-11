@@ -1,0 +1,29 @@
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <!-- Update these properties -->
+    <TemplateID>Vsix.Snippet</TemplateID>
+    <DefaultName>My.snippet</DefaultName>
+    <Name>Code Snippet</Name>
+    <Description>Creates a new code snippet file.</Description>
+    <SortOrder>2000</SortOrder>
+
+    <!-- Don't update these -->
+    <Icon>icon.png</Icon>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <AppliesTo>VSIX</AppliesTo>
+    <ShowByDefault>false</ShowByDefault>
+    <RequiredFrameworkVersion>4.6</RequiredFrameworkVersion>
+    <ProjectType>CSharp</ProjectType>
+  </TemplateData>
+
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>System.ComponentModel.Composition</Assembly>
+      </Reference>
+    </References>
+
+    <ProjectItem ReplaceParameters="true">Snippet.snippet</ProjectItem>
+  </TemplateContent>
+
+</VSTemplate>
