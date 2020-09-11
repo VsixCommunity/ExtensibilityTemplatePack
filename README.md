@@ -15,6 +15,7 @@ Templates include:
 
 * Editor Command Binding
 * Editor Command Handler
+* Code Snippets
 * Static Async Command
 * WPF TextView Creation Listener
 
