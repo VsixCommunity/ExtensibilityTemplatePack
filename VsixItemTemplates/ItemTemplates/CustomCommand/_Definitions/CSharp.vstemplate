@@ -21,8 +21,9 @@
     </References>
 
     <ProjectItem ReplaceParameters="true" TargetFileName="Commands\$commandName$.cs" OpenInEditor="true">Command.cs</ProjectItem>
-    <ProjectItem ReplaceParameters="true" TargetFileName="$packageName$.vsct" ItemType="VSCTCompile">VSPackage.vsct</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="VSCommandTable.vsct" ItemType="VSCTCompile">VSPackage.vsct</ProjectItem>
     <ProjectItem ReplaceParameters="true" TargetFileName="$packageName$.cs">VsPkg.cs</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="VSPackage.resx">VSPackage.resx</ProjectItem>
 
     <ProjectItem ReplaceParameters="true" TargetFileName="source.extension.vsixmanifest" ItemType="None" SubType="Designer">source.extension.vsixmanifest</ProjectItem>
 

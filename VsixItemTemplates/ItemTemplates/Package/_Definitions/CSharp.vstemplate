@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Async Package (updated)</Name>
+    <Description>An async package loadable in Visual Studio</Description>
+    <Icon>Icon.png</Icon>
+    <TemplateID>MadsK.CSharp.VSIX.VSPackage</TemplateID>
+    <AppliesTo>VSIX + CSharp</AppliesTo>
+    <ShowByDefault>false</ShowByDefault>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>11</SortOrder>
+    <RequiredFrameworkVersion>4.6</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>VSPackage.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>System.Design</Assembly>
+      </Reference>
+    </References>
+
+    <ProjectItem ReplaceParameters="true" TargetFileName="$packageName$.cs" OpenInEditor="true">VsPkg.cs</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="source.extension.vsixmanifest" ItemType="None" SubType="Designer">source.extension.vsixmanifest</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="VSPackage.resx">VSPackage.resx</ProjectItem>
+
+    <CustomParameters>
+      <CustomParameter Name="$AddVsixManifestAsset$" Value="VsPackageFromSameProject" />
+      <CustomParameter Name="$productNameResourceId$" Value="110" />
+      <CustomParameter Name="$productDetailsResourceId$" Value="112" />
+      <CustomParameter Name="$iconResourceId$" Value="400" />
+      <CustomParameter Name="$packageName$" Value="$rootSafeItemName$" />
+      <CustomParameter Name="$packageGuid$" Value="$guid1$"/>
+    </CustomParameters>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>Microsoft.Vsix.TemplatesPackage, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>Microsoft.Vsix.TemplatesPackage.VsixWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

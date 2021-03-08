@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Async Tool Window (updated)</Name>
+    <Description>Custom tool window hosted in a Visual Studio AsyncPackage with a command to load it asynchronously. Use this template for Visual Studio targeting 16.0 and beyond.</Description>
+    <Icon>Icon.png</Icon>
+    <TemplateID>MadsK.CSharp.VSIX.CustomAsyncToolWindow</TemplateID>
+    <AppliesTo>VSIX + CSharp</AppliesTo>
+    <ShowByDefault>false</ShowByDefault>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>31</SortOrder>
+    <RequiredFrameworkVersion>4.6</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>ToolWindow.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>System.Design</Assembly>
+      </Reference>
+
+      <Reference>
+        <Assembly>PresentationCore</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>PresentationFramework</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>WindowsBase</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>System.Xaml</Assembly>
+      </Reference>
+
+    </References>
+
+    <ProjectItem ReplaceParameters="true" TargetFileName="Commands\$commandName$.cs" OpenInEditor="true">Command.cs</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="ToolWindows\$toolWindowControl$.xaml" ItemType="Page" SubType="Designer" CustomTool="MSBuild:Compile" >MyControl.xaml</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="ToolWindows\$toolWindowControl$.xaml.cs" DependentUpon="$toolWindowControl$.xaml">MyControl.xaml.cs</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="ToolWindows\$toolWindow$.cs">ToolWindow.cs</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$packageName$.cs">VsPkg.cs</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="source.extension.vsixmanifest" ItemType="None" SubType="Designer">source.extension.vsixmanifest</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="VSPackage.resx">VSPackage.resx</ProjectItem>
+
+    <ProjectItem ReplaceParameters="true" TargetFileName="VSCommandTablevsct" ItemType="VSCTCompile">VSPackage.vsct</ProjectItem>
+    <CustomParameters>
+      <CustomParameter Name="$AddVsixManifestAsset$" Value="VsPackageWithCommandAndToolwindow" />
+
+      <CustomParameter Name="$productNameResourceId$" Value="110" />
+      <CustomParameter Name="$productDetailsResourceId$" Value="112" />
+      <CustomParameter Name="$iconResourceId$" Value="400" />
+      <CustomParameter Name="$packageName$" Value="$rootSafeItemName$Package"/>
+      <CustomParameter Name="$packageGuid$" Value="$guid1$"/>
+
+      <CustomParameter Name="$menuResourceId$" Value="Menus.ctmenu" />
+      <CustomParameter Name="$packageTemplateFiles$" Value="VsPkg;Package" />
+      <CustomParameter Name="$packageAttribute1$" Value='ProvideMenuResource("%menuResourceId%", 1)' />
+      <CustomParameter Name="$packageAttribute2$" Value="ProvideToolWindow(typeof(%rootNamespacePrefixInVsPackageScope%%toolWindow%))" />
+      <CustomParameter Name="$packageInitStatement$" Value="await %rootNamespacePrefixInVsPackageScope%$commandName$.InitializeAsync(this);"/>
+
+      <CustomParameter Name="$vsctExterns$" Value="stdidcmd.h;vsshlids.h" />
+      <CustomParameter Name="$vsctButtonParentGuid$" Value="guidSHLMainMenu" />
+      <CustomParameter Name="$vsctButtonParentId$" Value="IDG_VS_WNDO_OTRWNDWS1" />
+      <CustomParameter Name="$vsctButtonInGroup$" Value="false" />
+      <CustomParameter Name="$vsctImageNamesList$" Value="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+      <CustomParameter Name="$vsctImagesGuid$" Value="$guid2$" />
+      <CustomParameter Name="$cmdSetGuid$" Value="$guid3$" />
+
+      <CustomParameter Name="$commandName$" Value="$rootSafeItemName$Command" />
+      <CustomParameter Name="$commandId$" Value="$commandName$Id" />
+      <CustomParameter Name="$commandIdValue$" Value="0x0100" />
+      <CustomParameter Name="$commandText$" Value="$rootItemName$"/>
+
+      <CustomParameter Name="$toolWindow$" Value="$rootSafeItemName$" />
+      <CustomParameter Name="$toolWindowControl$" Value="$toolWindow$Control" />
+      <CustomParameter Name="$toolWindowGuid$" Value="$guid4$"/>
+    </CustomParameters>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>Microsoft.Vsix.TemplatesPackage, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>Microsoft.Vsix.TemplatesPackage.VsixWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>
