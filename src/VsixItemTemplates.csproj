@@ -94,11 +94,10 @@
       <LastGenOutput>VSPackage.cs</LastGenOutput>
     </Content>
     <Content Include="ItemTemplates\CustomCommand\_preprocess.xml" />
-    <Content Include="ItemTemplates\EditorCommandBinding\Icon.ico">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="ItemTemplates\EditorCommandBinding\Icon.png" />
     <Content Include="ItemTemplates\EditorCommandBinding\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\EditorCommandBinding\_preprocess.xml" />
+    <Content Include="ItemTemplates\EditorCommandHandler\Icon.png" />
     <Content Include="ItemTemplates\Package\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\Package\Icon.png" />
     <Content Include="ItemTemplates\Package\source.extension.vsixmanifest">
@@ -107,17 +106,11 @@
     </Content>
     <Content Include="ItemTemplates\Package\_preprocess.xml" />
     <Content Include="ItemTemplates\Snippet\Icon.png" />
-    <Content Include="ItemTemplates\EditorCommandHandler\Icon.ico">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="ItemTemplates\EditorCommandHandler\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\EditorCommandHandler\_preprocess.xml" />
     <Content Include="ItemTemplates\Snippet\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\Snippet\_preprocess.xml" />
-    <Content Include="ItemTemplates\TextviewCreationListener\Icon.ico">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
+    <Content Include="ItemTemplates\TextviewCreationListener\Icon.png" />
     <Content Include="ItemTemplates\TextviewCreationListener\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\TextviewCreationListener\_preprocess.xml" />
     <Content Include="ItemTemplates\ToolWindow\_Definitions\CSharp.vstemplate" />

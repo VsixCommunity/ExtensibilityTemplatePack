@@ -8,7 +8,7 @@
     <SortOrder>2020</SortOrder>
 
     <!-- Don't update these -->
-    <Icon>icon.ico</Icon>
+    <Icon>icon.png</Icon>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
     <AppliesTo>VSIX + CSharp</AppliesTo>
     <ShowByDefault>false</ShowByDefault>
