@@ -16,6 +16,9 @@
   <TemplateContent>
     <References>
       <Reference>
+        <Assembly>System</Assembly>
+      </Reference>
+      <Reference>
         <Assembly>System.Design</Assembly>
       </Reference>
 
@@ -40,9 +43,8 @@
     <ProjectItem ReplaceParameters="true" TargetFileName="ToolWindows\$toolWindow$.cs">ToolWindow.cs</ProjectItem>
     <ProjectItem ReplaceParameters="true" TargetFileName="$packageName$.cs">VsPkg.cs</ProjectItem>
     <ProjectItem ReplaceParameters="true" TargetFileName="source.extension.vsixmanifest" ItemType="None" SubType="Designer">source.extension.vsixmanifest</ProjectItem>
-    <ProjectItem ReplaceParameters="true" TargetFileName="VSPackage.resx">VSPackage.resx</ProjectItem>
-
-    <ProjectItem ReplaceParameters="true" TargetFileName="VSCommandTablevsct" ItemType="VSCTCompile">VSPackage.vsct</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="VSCommandTable.vsct" ItemType="VSCTCompile">VSPackage.vsct</ProjectItem>
+    
     <CustomParameters>
       <CustomParameter Name="$AddVsixManifestAsset$" Value="VsPackageWithCommandAndToolwindow" />
 

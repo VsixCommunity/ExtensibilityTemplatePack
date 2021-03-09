@@ -21,19 +21,6 @@ namespace $rootnamespace$
             commandService.AddCommand(menuItem);
         }
 
-        // %ifnot% $toolWindow$
-        public static void Execute(AsyncPackage package)
-        {
-            VsShellUtilities.ShowMessageBox(package,
-                "$safeitemname$ executed",
-                "Title of message",
-                OLEMSGICON.OLEMSGICON_INFO,
-                OLEMSGBUTTON.OLEMSGBUTTON_OKCANCEL,
-                OLEMSGDEFBUTTON.OLEMSGDEFBUTTON_FIRST
-            );
-        }
-        // %endif%
-        // %if% $toolWindow$
         private void Execute(object sender, EventArgs e)
         {
             ThreadHelper.ThrowIfNotOnUIThread();
@@ -46,6 +33,5 @@ namespace $rootnamespace$
             IVsWindowFrame windowFrame = (IVsWindowFrame)window.Frame;
             Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure(windowFrame.Show());
         }
-        // %endif%
     }
 }

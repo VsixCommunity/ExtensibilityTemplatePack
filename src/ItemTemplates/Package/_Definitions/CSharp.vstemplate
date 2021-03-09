@@ -16,6 +16,9 @@
   <TemplateContent>
     <References>
       <Reference>
+        <Assembly>System</Assembly>
+      </Reference>
+      <Reference>
         <Assembly>System.Design</Assembly>
       </Reference>
     </References>
