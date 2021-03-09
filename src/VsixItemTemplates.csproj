@@ -47,6 +47,7 @@
     <TemplateBuilderTargets Condition=" '$(TemplateBuilderTargets)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\..\packages\TemplateBuilder.1.1.6.1\tools\ligershark.templates.targets ))</TemplateBuilderTargets>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="ProjectTemplates\EmptyVsixProject\Properties\AssemblyInfo.cs" />
     <Compile Include="source.extension.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -70,6 +71,7 @@
     </None>
     <None Include="ItemTemplates\ToolWindow\ToolWindow.cs" />
     <None Include="ItemTemplates\ToolWindow\VsPkg.cs" />
+    <None Include="ProjectTemplates\EmptyVsixProject\VSIXProject.csproj" />
     <None Include="ProjectTemplates\VsixProject\VsPkg.cs" />
     <None Include="ProjectTemplates\VsixProject\Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,7 +80,6 @@
     <Content Include="..\LICENSE">
       <Link>Resources\LICENSE</Link>
       <IncludeInVSIX>true</IncludeInVSIX>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="packages.config" />
     <None Include="ProjectTemplates\VsixProject\VSIXProject.csproj" />
@@ -132,6 +133,12 @@
       <LastGenOutput>VSPackage.cs</LastGenOutput>
     </Content>
     <Content Include="ItemTemplates\ToolWindow\_preprocess.xml" />
+    <Content Include="ProjectTemplates\EmptyVsixProject\Icon.png" />
+    <Content Include="ProjectTemplates\EmptyVsixProject\Resources\Icon.png" />
+    <Content Include="ProjectTemplates\EmptyVsixProject\vspkg.source.extension.vsixmanifest">
+      <LastGenOutput>vspkg.source.extension.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProjectTemplates\EmptyVsixProject\_Definitions\CSharp.vstemplate" />
     <Content Include="ProjectTemplates\VsixProject\Icon.png" />
     <Content Include="ProjectTemplates\VsixProject\Resources\Icon.png" />
     <Content Include="ProjectTemplates\VsixProject\_Definitions\CSharp.vstemplate" />
@@ -143,7 +150,6 @@
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="Resources\Icon.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
   </ItemGroup>
