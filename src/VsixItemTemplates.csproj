@@ -47,6 +47,11 @@
     <TemplateBuilderTargets Condition=" '$(TemplateBuilderTargets)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\..\packages\TemplateBuilder.1.1.6.1\tools\ligershark.templates.targets ))</TemplateBuilderTargets>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="source.extension.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>source.extension.vsixmanifest</DependentUpon>
+    </Compile>
     <None Include="ItemTemplates\EditorCommandHandler\EditorCommandHandler.cs" />
     <None Include="ItemTemplates\TextviewCreationListener\TextviewCreationListener.cs" />
     <None Include="ItemTemplates\EditorCommandBinding\EditorCommandBinding.cs" />
@@ -65,18 +70,23 @@
     </None>
     <None Include="ItemTemplates\ToolWindow\ToolWindow.cs" />
     <None Include="ItemTemplates\ToolWindow\VsPkg.cs" />
+    <None Include="ProjectTemplates\VsixProject\VsPkg.cs" />
+    <None Include="ProjectTemplates\VsixProject\Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\LICENSE">
       <Link>Resources\LICENSE</Link>
       <IncludeInVSIX>true</IncludeInVSIX>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="packages.config" />
+    <None Include="ProjectTemplates\VsixProject\VSIXProject.csproj" />
     <None Include="Properties\template-builder.props" />
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
+      <Generator>VsixManifestGenerator</Generator>
+      <LastGenOutput>source.extension.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -122,12 +132,18 @@
       <LastGenOutput>VSPackage.cs</LastGenOutput>
     </Content>
     <Content Include="ItemTemplates\ToolWindow\_preprocess.xml" />
+    <Content Include="ProjectTemplates\VsixProject\Icon.png" />
+    <Content Include="ProjectTemplates\VsixProject\Resources\Icon.png" />
+    <Content Include="ProjectTemplates\VsixProject\_Definitions\CSharp.vstemplate" />
+    <Content Include="ProjectTemplates\VsixProject\vspkg.source.extension.vsixmanifest">
+      <LastGenOutput>vspkg.source.extension.cs</LastGenOutput>
+    </Content>
     <Content Include="registry.pkgdef">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="Resources\Icon.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
   </ItemGroup>
@@ -143,6 +159,7 @@
   <ItemGroup>
     <None Include="ItemTemplates\Package\VSPackage.resx" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(TemplateBuilderTargets)" Condition="Exists('$(TemplateBuilderTargets)')" Label="TemplateBuilder" />

@@ -9,6 +9,8 @@
     <ItemTemplate Path="ItemTemplates\EditorCommandHandler\_Definitions\CSharp.vstemplate" Name="Editor Command Handler" Description="Creates a class that implements the ICommandHandler&lt;T&gt; interface." ProjectType="CSharp" ProjectSubType="" />
     <ItemTemplate Path="ItemTemplates\TextviewCreationListener\_Definitions\CSharp.vstemplate" Name="WPF Textview Creation Listener" Description="Creates a class that implements the IWpfTextviewCreationListener interface." ProjectType="CSharp" ProjectSubType="" />
   </ItemTemplates>
-  <ProjectTemplates />
+  <ProjectTemplates>
+    <ProjectTemplate Path="ProjectTemplates\VsixProject\_Definitions\CSharp.vstemplate" Name="VSIX Project (updated)" Description="Build Visual Studio extensions using the Visual Studio SDK. Start with this template to create an extension project with an async package. Further extend functionality of Visual Studio by adding editor items, commands and tool windows." ProjectType="CSharp" ProjectSubType="" />
+  </ProjectTemplates>
   <Snippets />
 </TemplateReport>

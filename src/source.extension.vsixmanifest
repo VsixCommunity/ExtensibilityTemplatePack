@@ -1,23 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-    <Metadata>
-        <Identity Id="88049e1e-62f2-4ea2-851f-9ddb2de37f41" Version="1.1" Language="en-US" Publisher="Mads Kristensen" />
-        <DisplayName>Extensibility Item Templates</DisplayName>
-        <Description xml:space="preserve">A template pack for Visual Studio extension authors.</Description>
-        <MoreInfo>https://github.com/madskristensen/VsixItemTemplates</MoreInfo>
-        <License>Resources\LICENSE</License>
-        <Icon>Resources\Icon.png</Icon>
-        <PreviewImage>Resources\Icon.png</PreviewImage>
-        <Tags>vsix, extension, template</Tags>
-    </Metadata>
-    <Installation>
-        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
-    </Installation>
-    <Prerequisites>
-        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
-    </Prerequisites>
-    <Assets>
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="Output\ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="registry.pkgdef" />
-    </Assets>
+  <Metadata>
+    <Identity Id="88049e1e-62f2-4ea2-851f-9ddb2de37f41" Version="1.1" Language="en-US" Publisher="Mads Kristensen" />
+    <DisplayName>Extensibility Templates</DisplayName>
+    <Description xml:space="preserve">A template pack for Visual Studio extension authors full of useful project- and item templates.</Description>
+    <MoreInfo>https://github.com/madskristensen/VsixItemTemplates</MoreInfo>
+    <License>Resources\LICENSE</License>
+    <Icon>Resources\Icon.png</Icon>
+    <PreviewImage>Resources\Icon.png</PreviewImage>
+    <Tags>vsix, extension, template</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
+  </Installation>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="Output\ItemTemplates" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" Path="Output\ProjectTemplates" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="registry.pkgdef" />
+  </Assets>
 </PackageManifest>
