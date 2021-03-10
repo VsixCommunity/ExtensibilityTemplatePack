@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="88049e1e-62f2-4ea2-851f-9ddb2de37f41" Version="1.1" Language="en-US" Publisher="Mads Kristensen" />
+        <Identity Id="88049e1e-62f2-4ea2-851f-9ddb2de37f41" Version="2.0" Language="en-US" Publisher="Mads Kristensen" />
         <DisplayName>Extensibility Template Pack</DisplayName>
         <Description xml:space="preserve">A template pack for Visual Studio extension authors full of useful project- and item templates.</Description>
         <MoreInfo>https://github.com/madskristensen/VsixItemTemplates</MoreInfo>
@@ -19,5 +19,6 @@
     <Assets>
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="Output\ItemTemplates" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" Path="Output\ProjectTemplates" />
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="registry.pkgdef" />
     </Assets>
 </PackageManifest>

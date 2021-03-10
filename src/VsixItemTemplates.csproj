@@ -145,6 +145,9 @@
     <Content Include="ProjectTemplates\VsixProject\vspkg.source.extension.vsixmanifest">
       <LastGenOutput>vspkg.source.extension.cs</LastGenOutput>
     </Content>
+    <Content Include="registry.pkgdef">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="Resources\Icon.png">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
