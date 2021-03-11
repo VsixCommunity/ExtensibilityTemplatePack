@@ -2,8 +2,10 @@
 <TemplateReport>
   <ItemTemplates>
     <ItemTemplate Path="ItemTemplates\Package\_Definitions\CSharp.vstemplate" Name="Async Package (updated)" Description="An async package loadable in Visual Studio" ProjectType="CSharp" ProjectSubType="" />
+    <ItemTemplate Path="ItemTemplates\ToolWindow Optimized\_Definitions\CSharp.vstemplate" Name="Async Tool Window (optimized)" Description="Custom tool window hosted in a Visual Studio AsyncPackage with a command to load it asynchronously. Use this template for Visual Studio targeting 16.0 and beyond." ProjectType="CSharp" ProjectSubType="" />
     <ItemTemplate Path="ItemTemplates\ToolWindow\_Definitions\CSharp.vstemplate" Name="Async Tool Window (updated)" Description="Custom tool window hosted in a Visual Studio AsyncPackage with a command to load it asynchronously. Use this template for Visual Studio targeting 16.0 and beyond." ProjectType="CSharp" ProjectSubType="" />
     <ItemTemplate Path="ItemTemplates\Snippet\_Definitions\CSharp.vstemplate" Name="Code Snippet" Description="Creates a new code snippet file." ProjectType="CSharp" ProjectSubType="" />
+    <ItemTemplate Path="ItemTemplates\CustomCommandOptimized\_Definitions\CSharp.vstemplate" Name="Command (optimized)" Description="Custom command in Tools menu hosted in a Visual Studio Package" ProjectType="CSharp" ProjectSubType="" />
     <ItemTemplate Path="ItemTemplates\CustomCommand\_Definitions\CSharp.vstemplate" Name="Command (updated)" Description="Custom command in Tools menu hosted in a Visual Studio Package" ProjectType="CSharp" ProjectSubType="" />
     <ItemTemplate Path="ItemTemplates\EditorCommandBinding\_Definitions\CSharp.vstemplate" Name="Editor Command Binding" Description="Creates an EditorCommandArgs implemenatation used by an Editor Command Handler." ProjectType="CSharp" ProjectSubType="" />
     <ItemTemplate Path="ItemTemplates\EditorCommandHandler\_Definitions\CSharp.vstemplate" Name="Editor Command Handler" Description="Creates a class that implements the ICommandHandler&lt;T&gt; interface." ProjectType="CSharp" ProjectSubType="" />

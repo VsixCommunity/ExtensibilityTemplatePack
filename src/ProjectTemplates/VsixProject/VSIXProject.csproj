@@ -64,7 +64,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Madskristensen.VisualStudio.SDK.Helpers" Version="16.0.5" ExcludeAssets="runtime" />
+    <PackageReference Include="Madskristensen.VisualStudio.SDK.Helpers" Version="16.0.13" ExcludeAssets="runtime" />
     <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="16.10.11" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

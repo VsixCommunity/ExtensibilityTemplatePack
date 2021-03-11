@@ -15,7 +15,7 @@ namespace $rootnamespace$
             IMenuCommandService commandService = await package.GetServiceAsync<IMenuCommandService, IMenuCommandService>();
             Assumes.Present(commandService);
 
-            var cmdId = new CommandID(guid, id); // Replace guid and id with valid values
+            var cmdId = new CommandID(new Guid("$cmdSetGuid$"), $commandIdValue$);
             var menuItem = new OleMenuCommand((s, e) => Execute(package), cmdId);
 
             commandService.AddCommand(menuItem);
