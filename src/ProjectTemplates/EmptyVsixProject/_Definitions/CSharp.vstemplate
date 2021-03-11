@@ -1,6 +1,6 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
-    <Name>Empty VSIX Project (updated)</Name>
+    <Name>Empty VSIX Project (optimized)</Name>
     <TemplateID>MadsK.CSharp.VSIX.EmptyVSIXProject</TemplateID>
     <Description>Build Visual Studio extensions using the Visual Studio SDK. Start with this template to extend functionality of Visual Studio by adding editor items, commands and tool windows.</Description>
     <ProjectType>CSharp</ProjectType>
