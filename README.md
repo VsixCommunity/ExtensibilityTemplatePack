@@ -1,4 +1,4 @@
-# Extensibility Templates
+# Extensibility Template Pack
 
 [![Build status](https://ci.appveyor.com/api/projects/status/g3ro787tkr2a106m?svg=true)](https://ci.appveyor.com/project/madskristensen/vsixitemtemplates)
 
@@ -9,19 +9,19 @@ or get the [CI build](https://www.vsixgallery.com/extension/88049e1e-62f2-4ea2-8
 
 ----------------------------------------------
 
-A template pack for Visual Studio extension authors.
+A template pack for Visual Studio extension authors full of useful project- and item templates.
 
 ## Project templates
 Two new project templates replaces the existing *VSIX Project* and *Empty VSIX Project* templates that ships with Visual Studio.
 
-The two project templates are:
+The two project templates also include a reference to the NuGet package [Madskristensen.VisualStudio.SDK.Helpers](https://www.nuget.org/packages/Madskristensen.VisualStudio.SDK.Helpers/), which makes extension development a lot easier.
 
-### 1. VSIX Project (updated)
+### 1. VSIX Project (VSSDK Helpers)
 This template generates a clean VSIX project with a *AsyncPackage* class, an extension icon, and NuGet references to the VSSDK.
 
 ![Vsix Project](art/vsix-project.png)
 
-### 2. Empty VSIX Project (updated)
+### 2. Empty VSIX Project (VSSDK Helpers)
 This template generates an empty VSIX project with only an extension icon and NuGet references to the VSSDK.
 
 ![Empty Vsix Project](art/empty-vsix-project.png)
@@ -33,13 +33,18 @@ Find both templates in the New Project Dialog.
 They are both cleaned up and simplified versions of the built in templates.
 
 ## Item templates
-The first three item templates are cleanup and simplified versions of the built in templates.
+The templates marked `(modern)` can be used with the regular Visual Studio SDK. They are a cleaned up and modern version of the original templates, but the follow best practices and are much simpler.
 
-* [Async Package (updated)](https://github.com/madskristensen/VsixItemTemplates/blob/master/src/ItemTemplates/Package/VsPkg.cs)
-* [Command (updated)](https://github.com/madskristensen/VsixItemTemplates/blob/master/src/ItemTemplates/CustomCommand/Command.cs)
-* [Async Tool Window (updated)](https://github.com/madskristensen/VsixItemTemplates/tree/master/src/ItemTemplates/ToolWindow)
+The templates marked `(VSSDK Helpers)` can be used with the NuGet package [Madskristensen.VisualStudio.SDK.Helpers](https://www.nuget.org/packages/Madskristensen.VisualStudio.SDK.Helpers/) which makes extension development much easier.
 
-![Add New Items](art/add-new-items.png)
+* [Async Package (modern)](https://github.com/madskristensen/VsixItemTemplates/blob/master/src/ItemTemplates/Package/VsPkg.cs)
+* [Command (modern)](https://github.com/madskristensen/VsixItemTemplates/blob/master/src/ItemTemplates/CustomCommand/Command.cs)
+* [Command (VSSDK Helpers)](https://github.com/madskristensen/VsixItemTemplates/blob/master/src/ItemTemplates/CustomCommandOptimized/Command.cs)
+* [Async Tool Window (modern)](https://github.com/madskristensen/VsixItemTemplates/tree/master/src/ItemTemplates/ToolWindow)
+* [Async Tool Window (VSSDK Helpers)](https://github.com/madskristensen/VsixItemTemplates/tree/master/src/ItemTemplates/ToolWindow%20Optimized)
+* [Options Page (VSSDK Helpers)](https://github.com/madskristensen/VsixItemTemplates/blob/master/src/ItemTemplates/OptionsPage/OptionsPage.cs)
+
+![Add New Items](art/add-new-items.png?)
 
 In addition, there are seveal other templates available.
 
