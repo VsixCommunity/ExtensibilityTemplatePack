@@ -24,7 +24,7 @@ namespace $rootnamespace$
 
         public static void Execute(AsyncPackage package)
         {
-            VsShellUtilities.ShowMessageBox(Package,
+            VsShellUtilities.ShowMessageBox(package,
                 "$safeitemname$ executed",
                 "Title of message",
                 OLEMSGICON.OLEMSGICON_INFO,

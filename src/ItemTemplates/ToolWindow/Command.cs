@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.Design;
+﻿using System;
+using System.ComponentModel.Design;
 using Microsoft;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
@@ -21,10 +22,10 @@ namespace $rootnamespace$
             commandService.AddCommand(menuItem);
         }
 
-        private void Execute(object sender, EventArgs e)
+        private static void Execute(AsyncPackage package)
         {
             ThreadHelper.ThrowIfNotOnUIThread();
-            ToolWindowPane window = this.package.FindToolWindow(typeof($toolWindow$), 0, true);
+            ToolWindowPane window = package.FindToolWindow(typeof($toolWindow$), 0, true);
             if ((null == window) || (null == window.Frame))
             {
                 throw new NotSupportedException("Cannot create tool window");

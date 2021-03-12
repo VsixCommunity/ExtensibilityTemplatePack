@@ -13,7 +13,7 @@ namespace $rootnamespace$
         
         protected override Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
-            VsShellUtilities.ShowMessageBox(package,
+            VsShellUtilities.ShowMessageBox(Package,
                 "$safeitemname$ executed",
                 "Title of message",
                 OLEMSGICON.OLEMSGICON_INFO,
