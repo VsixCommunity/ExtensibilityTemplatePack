@@ -57,7 +57,7 @@
       <CustomParameter Name="$menuResourceId$" Value="Menus.ctmenu" />
       <CustomParameter Name="$packageTemplateFiles$" Value="VsPkg;Package" />
       <CustomParameter Name="$packageAttribute1$" Value='ProvideMenuResource("%menuResourceId%", 1)' />
-      <CustomParameter Name="$packageAttribute2$" Value="ProvideToolWindow(typeof(%rootNamespacePrefixInVsPackageScope%%toolWindow%))" />
+      <CustomParameter Name="$packageAttribute2$" Value="ProvideToolWindow(typeof(%rootNamespacePrefixInVsPackageScope%%toolWindow%), Style = VsDockStyle.Tabbed, Window = ToolWindowGuids.SolutionExplorer)" />
       <CustomParameter Name="$packageInitStatement$" Value="await %rootNamespacePrefixInVsPackageScope%$commandName$.InitializeAsync(this);"/>
 
       <CustomParameter Name="$vsctExterns$" Value="stdidcmd.h;vsshlids.h" />

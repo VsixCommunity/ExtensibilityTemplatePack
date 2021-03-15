@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30406.104
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VsixItemTemplates", "src\VsixItemTemplates.csproj", "{1D133A3F-5202-4B2E-860B-53216BCAFB42}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensibilityTemplatePack", "src\ExtensibilityTemplatePack.csproj", "{1D133A3F-5202-4B2E-860B-53216BCAFB42}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{79316542-8BBC-40B9-A947-600E5BFFE8CC}"
 	ProjectSection(SolutionItems) = preProject
