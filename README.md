@@ -28,7 +28,7 @@ This template generates an empty VSIX project with only an extension icon and Nu
 
 Find both templates in the New Project Dialog.
 
-![New Project Dialog](art/npd.png)
+![New Project Dialog](art/npd.png?)
 
 They are both cleaned up and simplified versions of the built in templates.
 
@@ -44,7 +44,7 @@ The templates marked `(Community)` can be used with the NuGet package [Community
 * [Async Tool Window (Community)](https://github.com/madskristensen/VsixItemTemplates/tree/master/src/ItemTemplates/ToolWindow%20Optimized)
 * [Options Page (Community)](https://github.com/madskristensen/VsixItemTemplates/blob/master/src/ItemTemplates/OptionsPage/OptionsPage.cs)
 
-![Add New Items](art/add-new-items.png?)
+![Add New Items](art/add-new-items.png)
 
 In addition, there are seveal other templates available.
 
