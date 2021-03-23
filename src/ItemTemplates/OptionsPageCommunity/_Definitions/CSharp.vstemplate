@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
-    <Name>Options Page (VSSDK Helpers)</Name>
+    <Name>Options Page (Community)</Name>
     <Description>A custom user options page for the Tools -> Options dialog.s</Description>
     <Icon>Icon.png</Icon>
     <TemplateID>MadsK.CSharp.VSIX.OptionsPage</TemplateID>

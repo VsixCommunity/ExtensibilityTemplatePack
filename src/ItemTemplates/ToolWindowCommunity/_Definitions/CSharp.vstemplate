@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
-    <Name>Async Tool Window (VSSDK Helpers)</Name>
+    <Name>Async Tool Window (Community)</Name>
     <Description>Custom tool window hosted in a Visual Studio AsyncPackage with a command to load it asynchronously. Use this template for Visual Studio targeting 16.0 and beyond.</Description>
     <Icon>Icon.png</Icon>
     <TemplateID>MadsK.CSharp.VSIX.CustomAsyncToolWindowOptimized</TemplateID>

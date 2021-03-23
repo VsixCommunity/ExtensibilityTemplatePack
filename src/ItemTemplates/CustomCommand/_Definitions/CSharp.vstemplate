@@ -53,7 +53,6 @@
       <CustomParameter Name="$commandId$" Value="$commandName$Id" />
       <CustomParameter Name="$commandIdValue$" Value="0x0100" />
       <CustomParameter Name="$commandText$" Value="Invoke $rootItemName$"/>
-
     </CustomParameters>
   </TemplateContent>
   <WizardExtension>

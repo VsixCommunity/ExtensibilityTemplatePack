@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel;
-using Microsoft.VisualStudio.Helpers;
+using Community.VisualStudio.Toolkit;
 
 namespace $rootnamespace$
 {

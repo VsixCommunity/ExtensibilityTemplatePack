@@ -11,7 +11,7 @@ namespace VsixItemTemplates
         public const string Name = "Extensibility Template Pack";
         public const string Description = @"A template pack for Visual Studio extension authors full of useful project- and item templates.";
         public const string Language = "en-US";
-        public const string Version = "2.0";
+        public const string Version = "2.0.991";
         public const string Author = "Mads Kristensen";
         public const string Tags = "vsix, extension, template";
     }

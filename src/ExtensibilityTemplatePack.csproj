@@ -48,15 +48,15 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="ProjectTemplates\EmptyVsixProject\Properties\AssemblyInfo.cs" />
-    <None Include="ItemTemplates\CustomCommandOptimized\Command.cs" />
-    <Compile Include="ItemTemplates\CustomCommandOptimized\VsPkg.cs" />
-    <None Include="ItemTemplates\ToolWindow Optimized\Command.cs" />
-    <None Include="ItemTemplates\ToolWindow Optimized\MyControl.xaml.cs">
+    <None Include="ItemTemplates\CustomCommandCommunity\Command.cs" />
+    <Compile Include="ItemTemplates\CustomCommandCommunity\VsPkg.cs" />
+    <None Include="ItemTemplates\ToolWindowCommunity\Command.cs" />
+    <None Include="ItemTemplates\ToolWindowCommunity\MyControl.xaml.cs">
       <DependentUpon>MyControl.xaml</DependentUpon>
     </None>
-    <None Include="ItemTemplates\ToolWindow Optimized\ToolWindow.cs" />
-    <None Include="ItemTemplates\ToolWindow Optimized\VsPkg.cs" />
-    <None Include="ItemTemplates\OptionsPage\OptionsPage.cs" />
+    <None Include="ItemTemplates\ToolWindowCommunity\ToolWindow.cs" />
+    <None Include="ItemTemplates\ToolWindowCommunity\VsPkg.cs" />
+    <None Include="ItemTemplates\OptionsPageCommunity\OptionsPage.cs" />
     <Compile Include="source.extension.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -105,15 +105,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ItemTemplates\CustomCommandOptimized\Icon.png" />
-    <Content Include="ItemTemplates\CustomCommandOptimized\source.extension.vsixmanifest">
+    <Content Include="ItemTemplates\CustomCommandCommunity\Icon.png" />
+    <Content Include="ItemTemplates\CustomCommandCommunity\source.extension.vsixmanifest">
       <LastGenOutput>source.extension.cs</LastGenOutput>
     </Content>
-    <Content Include="ItemTemplates\CustomCommandOptimized\VSPackage.vsct">
+    <Content Include="ItemTemplates\CustomCommandCommunity\VSPackage.vsct">
       <LastGenOutput>VSPackage.cs</LastGenOutput>
     </Content>
-    <Content Include="ItemTemplates\CustomCommandOptimized\_Definitions\CSharp.vstemplate" />
-    <Content Include="ItemTemplates\CustomCommandOptimized\_preprocess.xml" />
+    <Content Include="ItemTemplates\CustomCommandCommunity\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\CustomCommandCommunity\_preprocess.xml" />
     <Content Include="ItemTemplates\CustomCommand\Icon.png" />
     <Content Include="ItemTemplates\CustomCommand\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\CustomCommand\source.extension.vsixmanifest">
@@ -127,9 +127,9 @@
     <Content Include="ItemTemplates\EditorCommandBinding\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\EditorCommandBinding\_preprocess.xml" />
     <Content Include="ItemTemplates\EditorCommandHandler\Icon.png" />
-    <Content Include="ItemTemplates\OptionsPage\Icon.png" />
-    <Content Include="ItemTemplates\OptionsPage\_Definitions\CSharp.vstemplate" />
-    <Content Include="ItemTemplates\OptionsPage\_preprocess.xml" />
+    <Content Include="ItemTemplates\OptionsPageCommunity\Icon.png" />
+    <Content Include="ItemTemplates\OptionsPageCommunity\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\OptionsPageCommunity\_preprocess.xml" />
     <Content Include="ItemTemplates\Package\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\Package\Icon.png" />
     <Content Include="ItemTemplates\Package\source.extension.vsixmanifest">
@@ -145,15 +145,15 @@
     <Content Include="ItemTemplates\TextviewCreationListener\Icon.png" />
     <Content Include="ItemTemplates\TextviewCreationListener\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\TextviewCreationListener\_preprocess.xml" />
-    <Content Include="ItemTemplates\ToolWindow Optimized\Icon.png" />
-    <Content Include="ItemTemplates\ToolWindow Optimized\source.extension.vsixmanifest">
+    <Content Include="ItemTemplates\ToolWindowCommunity\Icon.png" />
+    <Content Include="ItemTemplates\ToolWindowCommunity\source.extension.vsixmanifest">
       <LastGenOutput>source.extension.cs</LastGenOutput>
     </Content>
-    <Content Include="ItemTemplates\ToolWindow Optimized\VSPackage.vsct">
+    <Content Include="ItemTemplates\ToolWindowCommunity\VSPackage.vsct">
       <LastGenOutput>VSPackage.cs</LastGenOutput>
     </Content>
-    <Content Include="ItemTemplates\ToolWindow Optimized\_Definitions\CSharp.vstemplate" />
-    <Content Include="ItemTemplates\ToolWindow Optimized\_preprocess.xml" />
+    <Content Include="ItemTemplates\ToolWindowCommunity\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\ToolWindowCommunity\_preprocess.xml" />
     <Content Include="ItemTemplates\ToolWindow\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\ToolWindow\Icon.png" />
     <Content Include="ItemTemplates\ToolWindow\source.extension.vsixmanifest">
@@ -192,7 +192,7 @@
     <None Include="ItemTemplates\Package\VSPackage.resx" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ItemTemplates\ToolWindow Optimized\MyControl.xaml">
+    <None Include="ItemTemplates\ToolWindowCommunity\MyControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </None>

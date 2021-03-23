@@ -1,5 +1,5 @@
 ﻿using System;
-using Microsoft.VisualStudio.Helpers;
+using Community.VisualStudio.Toolkit;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 using Task = System.Threading.Tasks.Task;
