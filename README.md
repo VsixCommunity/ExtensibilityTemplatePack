@@ -21,7 +21,10 @@ This template generates a clean VSIX project with a *AsyncPackage* class, an ext
 
 ![Vsix Project](art/vsix-project.png)
 
-### 2. Empty VSIX Project (Community)
+#### 1.1 VSIX Project w/Command (Community)
+Same as VSIX Project (Community) + a custom command.
+
+### 3. Empty VSIX Project (Community)
 This template generates an empty VSIX project with only an extension icon and NuGet references to the VSSDK.
 
 ![Empty Vsix Project](art/empty-vsix-project.png)
@@ -31,6 +34,7 @@ Find both templates in the New Project Dialog.
 ![New Project Dialog](art/npd.png?)
 
 They are both cleaned up and simplified versions of the built in templates.
+
 
 ## Item templates
 The templates marked `(modern)` can be used with the regular Visual Studio SDK. They are a cleaned up and modern version of the original templates, but the follow best practices and are much simpler.

@@ -57,6 +57,9 @@
     <None Include="ItemTemplates\ToolWindowCommunity\ToolWindow.cs" />
     <None Include="ItemTemplates\ToolWindowCommunity\VsPkg.cs" />
     <None Include="ItemTemplates\OptionsPageCommunity\OptionsPage.cs" />
+    <None Include="ProjectTemplates\VsixProjectCommand\Properties\AssemblyInfo.cs" />
+    <None Include="ProjectTemplates\VsixProjectCommand\VsPkg.cs" />
+    <None Include="ProjectTemplates\VsixProjectCommand\Commands\Command.cs" />
     <Compile Include="source.extension.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -81,6 +84,7 @@
     <None Include="ItemTemplates\ToolWindow\ToolWindow.cs" />
     <None Include="ItemTemplates\ToolWindow\VsPkg.cs" />
     <None Include="ProjectTemplates\EmptyVsixProject\VSIXProject.csproj" />
+    <None Include="ProjectTemplates\VsixProjectCommand\VSIXProject.csproj" />
     <None Include="ProjectTemplates\VsixProject\VsPkg.cs" />
     <None Include="ProjectTemplates\VsixProject\Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -169,6 +173,15 @@
       <LastGenOutput>vspkg.source.extension.cs</LastGenOutput>
     </Content>
     <Content Include="ProjectTemplates\EmptyVsixProject\_Definitions\CSharp.vstemplate" />
+    <Content Include="ProjectTemplates\VsixProjectCommand\Icon.png" />
+    <Content Include="ProjectTemplates\VsixProjectCommand\Resources\Icon.png" />
+    <Content Include="ProjectTemplates\VsixProjectCommand\VSPackage.vsct">
+      <LastGenOutput>VSPackage.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProjectTemplates\VsixProjectCommand\vspkg.source.extension.vsixmanifest">
+      <LastGenOutput>vspkg.source.extension.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProjectTemplates\VsixProjectCommand\_Definitions\CSharp.vstemplate" />
     <Content Include="ProjectTemplates\VsixProject\Icon.png" />
     <Content Include="ProjectTemplates\VsixProject\Resources\Icon.png" />
     <Content Include="ProjectTemplates\VsixProject\_Definitions\CSharp.vstemplate" />
