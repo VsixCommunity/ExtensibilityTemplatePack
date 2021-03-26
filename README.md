@@ -1,6 +1,6 @@
 # Extensibility Template Pack
 
-[![Build status](https://ci.appveyor.com/api/projects/status/g3ro787tkr2a106m?svg=true)](https://ci.appveyor.com/project/madskristensen/vsixitemtemplates)
+[![Build status](https://ci.appveyor.com/api/projects/status/l8xho8ck587m83dx?svg=true)](https://ci.appveyor.com/project/madskristensen/extensibilitytemplatepack)
 
 Awesome item templates for VSIX development
 
