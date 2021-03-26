@@ -4,7 +4,7 @@
         <Identity Id="88049e1e-62f2-4ea2-851f-9ddb2de37f41" Version="2.0.991" Language="en-US" Publisher="Mads Kristensen" />
         <DisplayName>Extensibility Template Pack</DisplayName>
         <Description xml:space="preserve">A template pack for Visual Studio extension authors full of useful project- and item templates.</Description>
-        <MoreInfo>https://github.com/madskristensen/VsixItemTemplates</MoreInfo>
+        <MoreInfo>https://github.com/madskristensen/ExtensibilityTemplatePack</MoreInfo>
         <License>Resources\LICENSE</License>
         <Icon>Resources\Icon.png</Icon>
         <PreviewImage>Resources\Icon.png</PreviewImage>
