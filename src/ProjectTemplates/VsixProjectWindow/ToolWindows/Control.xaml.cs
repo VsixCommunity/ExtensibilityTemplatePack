@@ -1,6 +1,6 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
+using Community.VisualStudio.Toolkit;
 
 namespace $safeprojectname$
 {
@@ -13,7 +13,7 @@ namespace $safeprojectname$
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Button clicked");
+            VS.Notifications.ShowMessage("$safeprojectname$", "Button clicked");
         }
     }
 }

@@ -1,24 +1,20 @@
 ﻿using System;
 using Microsoft.VisualStudio.Shell;
-using Microsoft.VisualStudio.Shell.Interop;
+using Community.VisualStudio.Toolkit;
 using Task = System.Threading.Tasks.Task;
 
 namespace $safeprojectname$
 {
-    internal sealed class MyCommand : BaseCommand<MyToolWindowCommand>
+    internal sealed class MyCommand : BaseCommand<MyCommand>
 {
-        public MyToolWindowCommand() : base(new Guid("$guid4$"), 0x0100)
+        public MyCommand() : base(new Guid("$guid4$"), 0x0100)
         { }
 
-        public static void Execute(AsyncPackage package)
+        protected override Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
-            VsShellUtilities.ShowMessageBox(package,
-                "MyCommand executed",
-                "Title of message",
-                OLEMSGICON.OLEMSGICON_INFO,
-                OLEMSGBUTTON.OLEMSGBUTTON_OKCANCEL,
-                OLEMSGDEFBUTTON.OLEMSGDEFBUTTON_FIRST
-            );
+            VS.Notifications.ShowMessage("MyCommand", "Button clicked");
+
+            return Task.CompletedTask;
         }
     }
 }
