@@ -57,9 +57,17 @@
     <None Include="ItemTemplates\ToolWindowCommunity\ToolWindow.cs" />
     <None Include="ItemTemplates\ToolWindowCommunity\VsPkg.cs" />
     <None Include="ItemTemplates\OptionsPageCommunity\OptionsPage.cs" />
+    <None Include="ProjectTemplates\VsixProjectWindow\VSIXProject.csproj" />
     <None Include="ProjectTemplates\VsixProjectCommand\Properties\AssemblyInfo.cs" />
     <None Include="ProjectTemplates\VsixProjectCommand\VsPkg.cs" />
     <None Include="ProjectTemplates\VsixProjectCommand\Commands\Command.cs" />
+    <None Include="ProjectTemplates\VsixProjectWindow\Commands\MyCommand.cs" />
+    <None Include="ProjectTemplates\VsixProjectWindow\Properties\AssemblyInfo.cs" />
+    <None Include="ProjectTemplates\VsixProjectWindow\VsPkg.cs" />
+    <None Include="ProjectTemplates\VsixProjectWindow\ToolWindows\Control.xaml.cs">
+      <DependentUpon>Control.xaml</DependentUpon>
+    </None>
+    <None Include="ProjectTemplates\VsixProjectWindow\ToolWindows\ToolWindow.cs" />
     <Compile Include="source.extension.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -173,6 +181,15 @@
       <LastGenOutput>vspkg.source.extension.cs</LastGenOutput>
     </Content>
     <Content Include="ProjectTemplates\EmptyVsixProject\_Definitions\CSharp.vstemplate" />
+    <Content Include="ProjectTemplates\VsixProjectWindow\Icon.png" />
+    <Content Include="ProjectTemplates\VsixProjectWindow\Resources\Icon.png" />
+    <Content Include="ProjectTemplates\VsixProjectWindow\VSPackage.vsct">
+      <LastGenOutput>VSPackage.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProjectTemplates\VsixProjectWindow\vspkg.source.extension.vsixmanifest">
+      <LastGenOutput>vspkg.source.extension.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProjectTemplates\VsixProjectWindow\_Definitions\CSharp.vstemplate" />
     <Content Include="ProjectTemplates\VsixProjectCommand\Icon.png" />
     <Content Include="ProjectTemplates\VsixProjectCommand\Resources\Icon.png" />
     <Content Include="ProjectTemplates\VsixProjectCommand\VSPackage.vsct">
@@ -210,7 +227,12 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="ProjectTemplates\VsixProjectWindow\ToolWindows\Control.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(TemplateBuilderTargets)" Condition="Exists('$(TemplateBuilderTargets)')" Label="TemplateBuilder" />
