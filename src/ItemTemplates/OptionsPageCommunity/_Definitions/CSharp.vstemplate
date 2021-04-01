@@ -2,7 +2,7 @@
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
     <Name>Options Page (Community)</Name>
-    <Description>A custom user options page for the Tools -> Options dialog.s</Description>
+    <Description>A custom user options page for the Tools -> Options dialog.</Description>
     <Icon>Icon.png</Icon>
     <TemplateID>MadsK.CSharp.VSIX.OptionsPage</TemplateID>
     <AppliesTo>VSIX + CSharp</AppliesTo>

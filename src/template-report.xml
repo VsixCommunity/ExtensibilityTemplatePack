@@ -9,7 +9,7 @@
     <ItemTemplate Path="ItemTemplates\CustomCommand\_Definitions\CSharp.vstemplate" Name="Command (modern)" Description="Custom command in Tools menu hosted in a Visual Studio Package" ProjectType="CSharp" ProjectSubType="" />
     <ItemTemplate Path="ItemTemplates\EditorCommandBinding\_Definitions\CSharp.vstemplate" Name="Editor Command Binding" Description="Creates an EditorCommandArgs implemenatation used by an Editor Command Handler." ProjectType="CSharp" ProjectSubType="" />
     <ItemTemplate Path="ItemTemplates\EditorCommandHandler\_Definitions\CSharp.vstemplate" Name="Editor Command Handler" Description="Creates a class that implements the ICommandHandler&lt;T&gt; interface." ProjectType="CSharp" ProjectSubType="" />
-    <ItemTemplate Path="ItemTemplates\OptionsPageCommunity\_Definitions\CSharp.vstemplate" Name="Options Page (Community)" Description="A custom user options page for the Tools -&gt; Options dialog.s" ProjectType="CSharp" ProjectSubType="" />
+    <ItemTemplate Path="ItemTemplates\OptionsPageCommunity\_Definitions\CSharp.vstemplate" Name="Options Page (Community)" Description="A custom user options page for the Tools -&gt; Options dialog." ProjectType="CSharp" ProjectSubType="" />
     <ItemTemplate Path="ItemTemplates\TextviewCreationListener\_Definitions\CSharp.vstemplate" Name="WPF Textview Creation Listener" Description="Creates a class that implements the IWpfTextviewCreationListener interface." ProjectType="CSharp" ProjectSubType="" />
   </ItemTemplates>
   <ProjectTemplates>
