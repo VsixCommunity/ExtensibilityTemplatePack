@@ -21,6 +21,7 @@
         <CommandFlag>IconIsMoniker</CommandFlag>
         <Strings>
           <ButtonText>$commandText$</ButtonText>
+          <LocCanonicalName>.$packageName$.$commandText$</LocCanonicalName>
         </Strings>
       </Button>
     </Buttons>

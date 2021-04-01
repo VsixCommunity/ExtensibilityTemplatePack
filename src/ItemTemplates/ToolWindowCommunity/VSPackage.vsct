@@ -15,6 +15,7 @@
         <CommandFlag>IconIsMoniker</CommandFlag>
         <Strings>
           <ButtonText>$commandText$</ButtonText>
+          <LocCanonicalName>.View.$commandText$</LocCanonicalName>
         </Strings>
       </Button>
     </Buttons>
