@@ -7,6 +7,7 @@ using Task = System.Threading.Tasks.Task;
 namespace $safeprojectname$
 {
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
+    [InstalledProductRegistration(Vsix.Name, Vsix.Description, Vsix.Version)]
     [Guid("$guid3$")]
     public sealed class $packageName$ : AsyncPackage
     {

@@ -22,6 +22,7 @@
   <TemplateContent>
     <Project TargetFileName="VSIXProject.csproj" File="VSIXProject.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="source.extension.vsixmanifest">vspkg.source.extension.vsixmanifest</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="source.extension.cs">source.extension.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Package.cs">VsPkg.cs</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
