@@ -71,6 +71,7 @@
     <None Include="ProjectTemplates\VsixProject\source.extension.cs" />
     <None Include="ProjectTemplates\VsixProjectCommand\source.extension.cs" />
     <None Include="ProjectTemplates\VsixProjectWindow\source.extension.cs" />
+    <None Include="ProjectTemplates\EmptyVsixProject\source.extension.cs" />
     <Compile Include="source.extension.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
