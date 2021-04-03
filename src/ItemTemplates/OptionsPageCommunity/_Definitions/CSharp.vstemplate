@@ -21,7 +21,7 @@
       </Reference>
     </References>
 
-    <ProjectItem ReplaceParameters="true">OptionsPage.cs</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="Options/$safeitemname$.cs" OpenInEditor="true">OptionsPage.cs</ProjectItem>
   </TemplateContent>
 
 </VSTemplate>

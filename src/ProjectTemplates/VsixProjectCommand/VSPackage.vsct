@@ -7,7 +7,7 @@
 
   <Commands package="guidPackage">
     <Groups>
-      <Group guid="guid$packageName$CmdSet" id="MyMenuGroup" priority="0x0600">
+      <Group guid="CommandSet" id="MyMenuGroup" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
       </Group>
     </Groups>
@@ -15,13 +15,13 @@
     <!--This section defines the elements the user can interact with, like a menu command or a button
         or combo box in a toolbar. -->
     <Buttons>
-      <Button guid="guid$packageName$CmdSet" id="MyCommand" priority="0x0100" type="Button">
-        <Parent guid="guid$packageName$CmdSet" id="MyMenuGroup" />
+      <Button guid="CommandSet" id="MyCommand" priority="0x0100" type="Button">
+        <Parent guid="CommandSet" id="MyMenuGroup" />
         <Icon guid="ImageCatalogGuid" id="StatusInformation" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <Strings>
           <ButtonText>My Command</ButtonText>
-          <LocCanonicalName>.$packageName$.MyCommand</LocCanonicalName>
+          <LocCanonicalName>.$safeprojectname$.MyCommand</LocCanonicalName>
         </Strings>
       </Button>
     </Buttons>
@@ -30,7 +30,7 @@
   <Symbols>
     <GuidSymbol name="guidPackage" value="{$guid3$}" />
 
-    <GuidSymbol name="guid$packageName$CmdSet" value="{$guid4$}">
+    <GuidSymbol name="CommandSet" value="{$guid4$}">
       <IDSymbol name="MyMenuGroup" value="0x0001" />
       <IDSymbol name="MyCommand" value="0x0100" />
     </GuidSymbol>

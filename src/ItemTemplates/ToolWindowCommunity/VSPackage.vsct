@@ -9,7 +9,7 @@
     <!--This section defines the elements the user can interact with, like a menu command or a button
         or combo box in a toolbar. -->
     <Buttons>
-      <Button guid="guid$packageName$CmdSet" id="$commandId$" priority="0x0100" type="Button">
+      <Button guid="CommandSet" id="$commandId$" priority="0x0100" type="Button">
         <Parent guid="$vsctButtonParentGuid$" id="$vsctButtonParentId$"/>
         <Icon guid="ImageCatalogGuid" id="StatusInformation" />
         <CommandFlag>IconIsMoniker</CommandFlag>
@@ -24,7 +24,7 @@
   <Symbols>
     <GuidSymbol name="guidPackage" value="{$packageGuid$}" />
 
-    <GuidSymbol name="guid$packageName$CmdSet" value="{$cmdSetGuid$}">
+    <GuidSymbol name="CommandSet" value="{$cmdSetGuid$}">
       <IDSymbol name="$commandId$" value="$commandIdValue$" />
     </GuidSymbol>
   </Symbols>
