@@ -8,8 +8,8 @@ namespace $safeprojectname$
 {
     internal sealed class MyToolWindowCommand : BaseCommand<MyToolWindowCommand>
 {
-        public MyToolWindowCommand() : base(new Guid("$guid4$"), 0x0100)
-        { }
+        public MyToolWindowCommand() 
+            : base(PackageGuids.CommandSet, PackageIds.MyCommand) { }
 
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {

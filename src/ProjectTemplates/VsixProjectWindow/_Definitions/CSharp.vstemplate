@@ -25,6 +25,7 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="source.extension.cs">source.extension.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Package.cs">VsPkg.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="VSCommandTable.vsct">VSPackage.vsct</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="VSCommandTable.cs">VSCommandTable.cs</ProjectItem>
       
       <Folder Name="ToolWindows" TargetFolderName="ToolWindows">
         <ProjectItem ReplaceParameters="true" TargetFileName="MyToolWindowControl.xaml">Control.xaml</ProjectItem>

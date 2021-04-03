@@ -7,8 +7,8 @@ namespace $safeprojectname$
 {
     internal sealed class MyCommand : BaseCommand<MyCommand>
 {
-        public MyCommand() : base(new Guid("$guid4$"), 0x0100)
-        { }
+        public MyCommand() 
+            : base(PackageGuids.CommandSet, PackageIds.MyCommand) { }
 
         protected override Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
