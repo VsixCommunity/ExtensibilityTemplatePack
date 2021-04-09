@@ -8,7 +8,7 @@ namespace $safeprojectname$
 {
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
     [InstalledProductRegistration(Vsix.Name, Vsix.Description, Vsix.Version)]
-    [Guid("$guid3$")]
+    [Guid(PackageGuids.guidPackageString)]
     public sealed class $packageName$ : AsyncPackage
     {
         protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)

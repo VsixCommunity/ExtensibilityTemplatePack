@@ -26,6 +26,7 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Package.cs">VsPkg.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="VSCommandTable.vsct">VSPackage.vsct</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="VSCommandTable.cs">VSCommandTable.cs</ProjectItem>
+      <ProjectItem TargetFileName="VSGlobals.vsct">VSGlobals.vsct</ProjectItem>
 
       <Folder Name="Commands" TargetFolderName="Commands">
         <ProjectItem ReplaceParameters="true" TargetFileName="MyCommand.cs">Command.cs</ProjectItem>

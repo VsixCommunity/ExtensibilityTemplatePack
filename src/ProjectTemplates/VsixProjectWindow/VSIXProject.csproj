@@ -80,6 +80,9 @@
       <Generator>VsctGenerator</Generator>
       <LastGenOutput>VSCommandTable.cs</LastGenOutput>
     </VSCTCompile>
+    <None Include="VSGlobals.vsct">
+      <DependentUpon>VSCommandTable.vsct</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ToolWindows\MyToolWindow.cs" />
@@ -100,7 +103,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Community.VisualStudio.Toolkit" Version="16.0.41" ExcludeAssets="Runtime" />
+    <PackageReference Include="Community.VisualStudio.Toolkit" Version="16.0.68" ExcludeAssets="Runtime" />
     <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="16.10.11" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,11 +4,12 @@
   <Extern href="stdidcmd.h"/>
   <Extern href="vsshlids.h"/>
   <Include href="KnownImageIds.vsct"/>
+  <Include href="VSGlobals.vsct"/>
 
   <Commands package="guidPackage">
     <Groups>
       <Group guid="CommandSet" id="MyMenuGroup" priority="0x0600">
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+        <Parent guid="VSMainMenu" id="Tools"/>
       </Group>
     </Groups>
 

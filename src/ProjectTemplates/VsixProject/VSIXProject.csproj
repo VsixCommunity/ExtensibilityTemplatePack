@@ -58,6 +58,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <VSCTCompile Include="VSCommandTable.vsct">
+      <ResourceName>Menus.ctmenu</ResourceName>
+      <Generator>VsctGenerator</Generator>
+      <LastGenOutput>VSCommandTable.cs</LastGenOutput>
+    </VSCTCompile>
+    <Compile Include="VSCommandTable.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VSCommandTable.vsct</DependentUpon>
+    </Compile>
+    <None Include="VSGlobals.vsct">
+      <DependentUpon>VSCommandTable.vsct</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
       <Generator>VsixManifestGenerator</Generator>
@@ -73,7 +88,7 @@
     <Reference Include="System.Design" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Community.VisualStudio.Toolkit" Version="16.0.41" ExcludeAssets="Runtime" />
+    <PackageReference Include="Community.VisualStudio.Toolkit" Version="16.0.68" ExcludeAssets="Runtime" />
     <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="16.10.11" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
