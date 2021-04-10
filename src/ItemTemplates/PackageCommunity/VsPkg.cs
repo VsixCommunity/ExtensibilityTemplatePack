@@ -1,7 +1,7 @@
-﻿using System;
+﻿using Community.VisualStudio.Toolkit;
+using System;
 using System.Runtime.InteropServices;
 using System.Threading;
-using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.Shell;
 using Task = System.Threading.Tasks.Task;
 
@@ -15,7 +15,7 @@ namespace $rootnamespace$
     [$packageAttribute2$]
     // %endif%
     [Guid("$packageGuid$")]
-    public sealed class $packageName$ : AsyncPackage
+    public sealed class $packageName$ : ToolkitPackage
     {
         protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
         {
