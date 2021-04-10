@@ -202,7 +202,7 @@
       <IDSymbol name="OutputWindowToolbar.SelectGroup" value="0x0293" />
       <IDSymbol name="OutputWindowToolbar.WordWrapGroup" value="0x029F" />
       <IDSymbol name="Project" value="0x0083" />
-      <IDSymbol name="Project.AddGroup" value="0x014" />
+      <IDSymbol name="Project.AddGroup" value="0x0140" />
       <IDSymbol name="Project.AddCodeGroup" value="0x0145" />
       <IDSymbol name="Project.AddMiscGroup" value="0x014C" />
       <IDSymbol name="Project.AddRemoveGroup" value="0x0147" />
@@ -248,8 +248,8 @@
       <IDSymbol name="SolutionFolder.AddProjectGroup" value="0x0261" />
       <IDSymbol name="SolutionFolder.BuildGroup" value="0x0263" />
       <IDSymbol name="SolutionNode" value="0x0413" />
-      <IDSymbol name="SolutionNode.AddItemGroup" value="0x021E" />
-      <IDSymbol name="SolutionNode.AddProjectGroup" value="0x021D" />
+      <IDSymbol name="SolutionNode.AddGroup.Submenu.AddItemGroup" value="0x021E" />
+      <IDSymbol name="SolutionNode.AddGroup.Submenu.AddProjectGroup" value="0x021D" />
       <IDSymbol name="SolutionNode.BuildGroup" value="0x0219" />
       <IDSymbol name="SolutionNode.DebugGroup" value="0x021F" />
       <IDSymbol name="SolutionNode.ExploreGroup" value="0x0265" />
