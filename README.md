@@ -1,6 +1,6 @@
 # Extensibility Template Pack
 
-[![Build status](https://ci.appveyor.com/api/projects/status/l8xho8ck587m83dx?svg=true)](https://ci.appveyor.com/project/madskristensen/extensibilitytemplatepack)
+[![Build status](https://ci.appveyor.com/api/projects/status/opoy5kyysss7f851?svg=true)](https://ci.appveyor.com/project/madskristensen/extensibilitytemplatepack-dhpo7)
 
 Awesome item templates for VSIX development
 
