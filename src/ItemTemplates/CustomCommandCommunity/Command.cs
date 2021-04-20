@@ -5,11 +5,9 @@ using Task = System.Threading.Tasks.Task;
 
 namespace $rootnamespace$
 {
+    [Command("$cmdSetGuid$". $commandIdValue$)]
     internal sealed class $commandName$ : BaseCommand<$commandName$>
-    {
-        public $commandName$() : base(new Guid("$cmdSetGuid$"), $commandIdValue$)
-        { }
-        
+    {        
         protected override Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
             VS.Notifications.ShowMessage("commandName", "Button clicked");

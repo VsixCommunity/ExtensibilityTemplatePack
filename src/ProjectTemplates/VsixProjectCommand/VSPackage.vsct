@@ -6,9 +6,9 @@
   <Include href="KnownImageIds.vsct"/>
   <Include href="VSGlobals.vsct"/>
 
-  <Commands package="guidPackage">
+  <Commands package="$safeprojectname$">
     <Groups>
-      <Group guid="CommandSet" id="MyMenuGroup" priority="0x0600">
+      <Group guid="$safeprojectname$" id="MyMenuGroup" priority="0x0600">
         <Parent guid="VSMainMenu" id="Tools"/>
       </Group>
     </Groups>
@@ -16,8 +16,8 @@
     <!--This section defines the elements the user can interact with, like a menu command or a button
         or combo box in a toolbar. -->
     <Buttons>
-      <Button guid="CommandSet" id="MyCommand" priority="0x0100" type="Button">
-        <Parent guid="CommandSet" id="MyMenuGroup" />
+      <Button guid="$safeprojectname$" id="MyCommand" priority="0x0100" type="Button">
+        <Parent guid="$safeprojectname$" id="MyMenuGroup" />
         <Icon guid="ImageCatalogGuid" id="StatusInformation" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <Strings>
@@ -29,9 +29,7 @@
   </Commands>
 
   <Symbols>
-    <GuidSymbol name="guidPackage" value="{$guid3$}" />
-
-    <GuidSymbol name="CommandSet" value="{$guid4$}">
+    <GuidSymbol name="$safeprojectname$" value="{$guid3$}">
       <IDSymbol name="MyMenuGroup" value="0x0001" />
       <IDSymbol name="MyCommand" value="0x0100" />
     </GuidSymbol>

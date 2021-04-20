@@ -4,11 +4,9 @@ using Task = System.Threading.Tasks.Task;
 
 namespace $safeprojectname$
 {
+    [Command(PackageIds.MyCommand)]
     internal sealed class MyToolWindowCommand : BaseCommand<MyToolWindowCommand>
-{
-        public MyToolWindowCommand()
-            : base(PackageGuids.CommandSet, PackageIds.MyCommand) { }
-
+    {
         protected override Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
             return MyToolWindow.ShowAsync();

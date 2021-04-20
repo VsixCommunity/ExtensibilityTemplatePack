@@ -6,10 +6,12 @@
   <Include href="KnownImageIds.vsct"/>
   <Include href="VSGlobals.vsct"/>
 
-  <Commands package="guidPackage">
+  <Commands package="$safeprojectname$">
   </Commands>
 
   <Symbols>
-    <GuidSymbol name="guidPackage" value="{$guid3$}" />
+    <GuidSymbol name="$safeprojectname$" value="{$guid3$}">
+      
+    </GuidSymbol>
   </Symbols>
 </CommandTable>

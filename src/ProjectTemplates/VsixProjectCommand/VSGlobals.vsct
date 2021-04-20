@@ -214,7 +214,7 @@
       <IDSymbol name="Project.SettingsGroup" value="0x014D" />
       <IDSymbol name="Project.Toolbar1Group" value="0x014A" />
       <IDSymbol name="Project.Toolbar2Group" value="0x014B" />
-      <IDSymbol name="Project.UnloadReload" value="0x0144" />
+      <IDSymbol name="Project.UnloadReloadGroup" value="0x0144" />
       <IDSymbol name="Project.Web1Group" value="0x0148" />
       <IDSymbol name="Project.Web2Group" value="0x0149" />
       <IDSymbol name="ProjectNode" value="0x0402" />
@@ -244,14 +244,18 @@
       <IDSymbol name="SnippetsToolbar.ReplaceGroup" value="0x02CA" />
       <IDSymbol name="SolutionFolder" value="0x0414" />
       <IDSymbol name="SolutionFolder.AddGroup" value="0x0264" />
-      <IDSymbol name="SolutionFolder.AddItemGroup" value="0x0262" />
-      <IDSymbol name="SolutionFolder.AddProjectGroup" value="0x0261" />
+      <IDSymbol name="SolutionFolder.AddGroup.AddMenu" value="0x0357" />
+      <IDSymbol name="SolutionFolder.AddGroup.AddMenu.AddItemGroup" value="0x0262" />
+      <IDSymbol name="SolutionFolder.AddGroup.AddMenu.AddProjectGroup" value="0x0261" />
+      <IDSymbol name="SolutionFolder.UnloadReloadGroup" value="0x023A" />
       <IDSymbol name="SolutionFolder.BuildGroup" value="0x0263" />
       <IDSymbol name="SolutionNode" value="0x0413" />
-      <IDSymbol name="SolutionNode.AddGroup.Submenu.AddItemGroup" value="0x021E" />
-      <IDSymbol name="SolutionNode.AddGroup.Submenu.AddProjectGroup" value="0x021D" />
+      <IDSymbol name="SolutionNode.AddGroup.AddMenu" value="0x0350" />
+      <IDSymbol name="SolutionNode.AddGroup.AddMenu.AddItemGroup" value="0x021E" />
+      <IDSymbol name="SolutionNode.AddGroup.AddMenu.AddProjectGroup" value="0x021D" />
       <IDSymbol name="SolutionNode.BuildGroup" value="0x0219" />
       <IDSymbol name="SolutionNode.DebugGroup" value="0x021F" />
+      <IDSymbol name="SolutionNode.DebugGroup.DebugMenu" value="0x0351" />
       <IDSymbol name="SolutionNode.ExploreGroup" value="0x0265" />
       <IDSymbol name="SolutionNode.PropertiesGroup" value="0x0215" />
       <IDSymbol name="SolutionNode.RenameGroup" value="0x0212" />

@@ -22,9 +22,7 @@
   </Commands>
 
   <Symbols>
-    <GuidSymbol name="guidPackage" value="{$packageGuid$}" />
-
-    <GuidSymbol name="CommandSet" value="{$cmdSetGuid$}">
+    <GuidSymbol name="$commandIdValue$" value="{$packageGuid$}">
       <IDSymbol name="$commandId$" value="$commandIdValue$" />
     </GuidSymbol>
   </Symbols>

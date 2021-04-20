@@ -12,8 +12,8 @@ namespace $safeprojectname$
     /// </summary>
     internal sealed partial class PackageGuids
     {
-        public const string guidPackageString = "$guid3$";
-        public static Guid guidPackage = new Guid(guidPackageString);
+        public const string $safeprojectname$String = "$guid3$";
+        public static Guid $safeprojectname$ = new Guid($safeprojectname$String);
     }
     /// <summary>
     /// Helper class that encapsulates all CommandIDs uses across VS Package.
