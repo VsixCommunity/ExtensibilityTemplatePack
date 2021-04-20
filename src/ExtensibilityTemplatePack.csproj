@@ -162,14 +162,8 @@
       <LastGenOutput>vspkg.source.extension.cs</LastGenOutput>
     </Content>
     <Content Include="ProjectTemplates\EmptyVsixProject\_Definitions\CSharp.vstemplate" />
-    <None Include="ProjectTemplates\VsixProjectCommand\VSGlobals.vsct">
-      <LastGenOutput>VSGlobals.cs</LastGenOutput>
-    </None>
     <Content Include="ProjectTemplates\VsixProjectWindow\Icon.png" />
     <Content Include="ProjectTemplates\VsixProjectWindow\Resources\Icon.png" />
-    <None Include="ProjectTemplates\VsixProjectWindow\VSGlobals.vsct">
-      <LastGenOutput>VSGlobals.cs</LastGenOutput>
-    </None>
     <Content Include="ProjectTemplates\VsixProjectWindow\VSPackage.vsct">
       <LastGenOutput>VSPackage.cs</LastGenOutput>
     </Content>
@@ -188,9 +182,6 @@
     <Content Include="ProjectTemplates\VsixProjectCommand\_Definitions\CSharp.vstemplate" />
     <Content Include="ProjectTemplates\VsixProject\Icon.png" />
     <Content Include="ProjectTemplates\VsixProject\Resources\Icon.png" />
-    <None Include="ProjectTemplates\VsixProject\VSGlobals.vsct">
-      <LastGenOutput>VSGlobals.cs</LastGenOutput>
-    </None>
     <Content Include="ProjectTemplates\VsixProject\VSPackage.vsct">
       <LastGenOutput>VSPackage.cs</LastGenOutput>
     </Content>

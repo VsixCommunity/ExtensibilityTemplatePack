@@ -80,9 +80,6 @@
       <Generator>VsctGenerator</Generator>
       <LastGenOutput>VSCommandTable.cs</LastGenOutput>
     </VSCTCompile>
-    <None Include="VSGlobals.vsct">
-      <DependentUpon>VSCommandTable.vsct</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -90,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Community.VisualStudio.Toolkit" Version="16.0.75.25" ExcludeAssets="runtime" />
+    <PackageReference Include="Community.VisualStudio.VSCT" Version="16.0.29.6" PrivateAssets="all" />
     <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="16.10.11" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
