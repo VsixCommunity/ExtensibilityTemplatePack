@@ -1,0 +1,35 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <Header>
+        <Title>$safeitemname$</Title>
+        <Author>$username$</Author>
+        <Shortcut>ae</Shortcut>
+        <Description>Code snippet for "addEventListener"</Description>
+        <SnippetTypes>
+            <SnippetType>Expansion</SnippetType>
+        </SnippetTypes>
+    </Header>
+    <Snippet>
+        <Declarations>
+            <Literal>
+                <ID>object</ID>
+                <ToolTip>Object to attach to</ToolTip>
+                <Default>window</Default>
+            </Literal>
+            <Literal>
+                <ID>event</ID>
+                <ToolTip>Name of the event</ToolTip>
+                <Default>load</Default>
+            </Literal>
+            <Literal>
+                <ID>body</ID>
+                <ToolTip>Body of event handler function</ToolTip>
+                <Default>// body</Default>
+            </Literal>
+        </Declarations>
+        <Code Language="JavaScript">
+            <![CDATA[$object$.addEventListener('$event$', function(e) {
+    $body$
+});$end$]]>
+        </Code>
+    </Snippet>
+</CodeSnippet>

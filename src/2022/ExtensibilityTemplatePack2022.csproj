@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\Microsoft.VSSDK.BuildTools.17.0.1619-preview1\build\Microsoft.VSSDK.BuildTools.props" Condition="Exists('..\..\packages\Microsoft.VSSDK.BuildTools.17.0.1619-preview1\build\Microsoft.VSSDK.BuildTools.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>16.0</MinimumVisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{1D133A3F-5202-4B2E-860B-53216BCAFB43}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VsixItemTemplates</RootNamespace>
+    <AssemblyName>VsixItemTemplates</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <GeneratePkgDefFile>false</GeneratePkgDefFile>
+    <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
+    <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
+    <IncludeDebugSymbolsInLocalVSIXDeployment>false</IncludeDebugSymbolsInLocalVSIXDeployment>
+    <CopyBuildOutputToOutputDirectory>false</CopyBuildOutputToOutputDirectory>
+    <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
+    <StartAction>Program</StartAction>
+    <StartProgram Condition="'$(DevEnvDir)' != ''">$(DevEnvDir)devenv.exe</StartProgram>
+    <StartArguments>/rootsuffix Exp</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Label="TemplateBuilder">
+    <TemplateBuilderTargets Condition=" '$(TemplateBuilderTargets)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\..\..\packages\TemplateBuilder.1.1.6.1\tools\ligershark.templates.targets ))</TemplateBuilderTargets>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="ProjectTemplates\EmptyVsixProject\Properties\AssemblyInfo.cs" />
+    <None Include="ItemTemplates\CustomCommandCommunity\Command.cs" />
+    <Compile Include="ItemTemplates\CustomCommandCommunity\VsPkg.cs" />
+    <None Include="ItemTemplates\ToolWindowCommunity\Command.cs" />
+    <None Include="ItemTemplates\ToolWindowCommunity\MyControl.xaml.cs">
+      <DependentUpon>MyControl.xaml</DependentUpon>
+    </None>
+    <None Include="ItemTemplates\ToolWindowCommunity\ToolWindow.cs" />
+    <None Include="ItemTemplates\ToolWindowCommunity\VsPkg.cs" />
+    <None Include="ItemTemplates\OptionsPageCommunity\OptionsPage.cs" />
+    <None Include="ProjectTemplates\VsixProjectWindow\VSIXProject.csproj" />
+    <None Include="ProjectTemplates\VsixProjectCommand\Properties\AssemblyInfo.cs" />
+    <None Include="ProjectTemplates\VsixProjectCommand\VsPkg.cs" />
+    <None Include="ProjectTemplates\VsixProjectCommand\Commands\Command.cs" />
+    <None Include="ProjectTemplates\VsixProjectWindow\Commands\MyCommand.cs" />
+    <None Include="ProjectTemplates\VsixProjectWindow\Properties\AssemblyInfo.cs" />
+    <None Include="ProjectTemplates\VsixProjectWindow\VsPkg.cs" />
+    <None Include="ProjectTemplates\VsixProjectWindow\ToolWindows\Control.xaml.cs">
+      <DependentUpon>Control.xaml</DependentUpon>
+    </None>
+    <None Include="ProjectTemplates\VsixProjectWindow\ToolWindows\ToolWindow.cs" />
+    <None Include="ProjectTemplates\VsixProject\source.extension.cs" />
+    <None Include="ProjectTemplates\VsixProjectCommand\source.extension.cs" />
+    <None Include="ProjectTemplates\VsixProjectWindow\source.extension.cs" />
+    <None Include="ProjectTemplates\EmptyVsixProject\source.extension.cs" />
+    <None Include="ProjectTemplates\VsixProjectWindow\VSCommandTable.cs" />
+    <None Include="ProjectTemplates\VsixProjectCommand\VSCommandTable.cs" />
+    <None Include="ProjectTemplates\VsixProject\VSCommandTable.cs" />
+    <Compile Include="source.extension.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>source.extension.vsixmanifest</DependentUpon>
+    </Compile>
+    <None Include="ItemTemplates\EditorCommandHandler\EditorCommandHandler.cs" />
+    <None Include="ItemTemplates\TextviewCreationListener\TextviewCreationListener.cs" />
+    <None Include="ItemTemplates\EditorCommandBinding\EditorCommandBinding.cs" />
+    <None Include="ItemTemplates\Snippet\Snippet.snippet" />
+    <Compile Include="ItemTemplates\PackageCommunity\source.extension.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>source.extension.vsixmanifest</DependentUpon>
+    </Compile>
+    <Compile Include="ItemTemplates\PackageCommunity\VsPkg.cs" />
+    <None Include="ProjectTemplates\EmptyVsixProject\VSIXProject.csproj" />
+    <None Include="ProjectTemplates\VsixProjectCommand\VSIXProject.csproj" />
+    <None Include="ProjectTemplates\VsixProject\VsPkg.cs" />
+    <None Include="ProjectTemplates\VsixProject\Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\LICENSE">
+      <Link>Resources\LICENSE</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="ProjectTemplates\VsixProject\VSIXProject.csproj" />
+    <None Include="Properties\template-builder.props" />
+    <None Include="source.extension.vsixmanifest">
+      <SubType>Designer</SubType>
+      <Generator>VsixManifestGenerator</Generator>
+      <LastGenOutput>source.extension.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ItemTemplates\CustomCommandCommunity\Icon.png" />
+    <Content Include="ItemTemplates\CustomCommandCommunity\source.extension.vsixmanifest">
+      <LastGenOutput>source.extension.cs</LastGenOutput>
+    </Content>
+    <Content Include="ItemTemplates\CustomCommandCommunity\VSPackage.vsct">
+      <LastGenOutput>VSPackage.cs</LastGenOutput>
+    </Content>
+    <Content Include="ItemTemplates\CustomCommandCommunity\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\CustomCommandCommunity\_preprocess.xml" />
+    <Content Include="ItemTemplates\EditorCommandBinding\Icon.png" />
+    <Content Include="ItemTemplates\EditorCommandBinding\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\EditorCommandBinding\_preprocess.xml" />
+    <Content Include="ItemTemplates\EditorCommandHandler\Icon.png" />
+    <Content Include="ItemTemplates\OptionsPageCommunity\Icon.png" />
+    <Content Include="ItemTemplates\OptionsPageCommunity\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\OptionsPageCommunity\_preprocess.xml" />
+    <Content Include="ItemTemplates\PackageCommunity\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\PackageCommunity\Icon.png" />
+    <Content Include="ItemTemplates\PackageCommunity\source.extension.vsixmanifest">
+      <Generator>VsixManifestGenerator</Generator>
+      <LastGenOutput>source.extension.cs</LastGenOutput>
+    </Content>
+    <Content Include="ItemTemplates\PackageCommunity\_preprocess.xml" />
+    <Content Include="ItemTemplates\Snippet\Icon.png" />
+    <Content Include="ItemTemplates\EditorCommandHandler\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\EditorCommandHandler\_preprocess.xml" />
+    <Content Include="ItemTemplates\Snippet\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\Snippet\_preprocess.xml" />
+    <Content Include="ItemTemplates\TextviewCreationListener\Icon.png" />
+    <Content Include="ItemTemplates\TextviewCreationListener\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\TextviewCreationListener\_preprocess.xml" />
+    <Content Include="ItemTemplates\ToolWindowCommunity\Icon.png" />
+    <Content Include="ItemTemplates\ToolWindowCommunity\source.extension.vsixmanifest">
+      <LastGenOutput>source.extension.cs</LastGenOutput>
+    </Content>
+    <Content Include="ItemTemplates\ToolWindowCommunity\VSPackage.vsct">
+      <LastGenOutput>VSPackage.cs</LastGenOutput>
+    </Content>
+    <Content Include="ItemTemplates\ToolWindowCommunity\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\ToolWindowCommunity\_preprocess.xml" />
+    <Content Include="ProjectTemplates\EmptyVsixProject\Icon.png" />
+    <Content Include="ProjectTemplates\EmptyVsixProject\Resources\Icon.png" />
+    <Content Include="ProjectTemplates\EmptyVsixProject\vspkg.source.extension.vsixmanifest">
+      <LastGenOutput>vspkg.source.extension.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProjectTemplates\EmptyVsixProject\_Definitions\CSharp.vstemplate" />
+    <Content Include="ProjectTemplates\VsixProjectWindow\Icon.png" />
+    <Content Include="ProjectTemplates\VsixProjectWindow\Resources\Icon.png" />
+    <Content Include="ProjectTemplates\VsixProjectWindow\VSPackage.vsct">
+      <LastGenOutput>VSPackage.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProjectTemplates\VsixProjectWindow\vspkg.source.extension.vsixmanifest">
+      <LastGenOutput>vspkg.source.extension.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProjectTemplates\VsixProjectWindow\_Definitions\CSharp.vstemplate" />
+    <Content Include="ProjectTemplates\VsixProjectCommand\Icon.png" />
+    <Content Include="ProjectTemplates\VsixProjectCommand\Resources\Icon.png" />
+    <Content Include="ProjectTemplates\VsixProjectCommand\VSPackage.vsct">
+      <LastGenOutput>VSPackage.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProjectTemplates\VsixProjectCommand\vspkg.source.extension.vsixmanifest">
+      <LastGenOutput>vspkg.source.extension.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProjectTemplates\VsixProjectCommand\_Definitions\CSharp.vstemplate" />
+    <Content Include="ProjectTemplates\VsixProject\Icon.png" />
+    <Content Include="ProjectTemplates\VsixProject\Resources\Icon.png" />
+    <Content Include="ProjectTemplates\VsixProject\VSPackage.vsct">
+      <LastGenOutput>VSPackage.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProjectTemplates\VsixProject\_Definitions\CSharp.vstemplate" />
+    <Content Include="ProjectTemplates\VsixProject\vspkg.source.extension.vsixmanifest">
+      <LastGenOutput>vspkg.source.extension.cs</LastGenOutput>
+    </Content>
+    <Content Include="registry.pkgdef">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Resources\Icon.png">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ItemTemplates\PackageCommunity\VSPackage.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ItemTemplates\ToolWindowCommunity\MyControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ProjectTemplates\VsixProjectWindow\ToolWindows\Control.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="TemplateBuilder, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\TemplateBuilder.1.1.6.1\lib\TemplateBuilder.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\packages\Microsoft.VisualStudio.SDK.Analyzers.15.8.33\analyzers\cs\Microsoft.VisualStudio.SDK.Analyzers.dll" />
+    <Analyzer Include="..\..\packages\Microsoft.VisualStudio.Threading.Analyzers.15.8.122\analyzers\cs\Microsoft.VisualStudio.Threading.Analyzers.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(TemplateBuilderTargets)" Condition="Exists('$(TemplateBuilderTargets)')" Label="TemplateBuilder" />
+  <Import Project="..\..\packages\Microsoft.VisualStudio.Threading.Analyzers.15.8.122\build\Microsoft.VisualStudio.Threading.Analyzers.targets" Condition="Exists('..\..\packages\Microsoft.VisualStudio.Threading.Analyzers.15.8.122\build\Microsoft.VisualStudio.Threading.Analyzers.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Microsoft.VisualStudio.Threading.Analyzers.15.8.122\build\Microsoft.VisualStudio.Threading.Analyzers.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.VisualStudio.Threading.Analyzers.15.8.122\build\Microsoft.VisualStudio.Threading.Analyzers.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Microsoft.VisualStudio.SDK.Analyzers.15.8.33\build\Microsoft.VisualStudio.SDK.Analyzers.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.VisualStudio.SDK.Analyzers.15.8.33\build\Microsoft.VisualStudio.SDK.Analyzers.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Microsoft.VSSDK.BuildTools.17.0.1619-preview1\build\Microsoft.VSSDK.BuildTools.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.VSSDK.BuildTools.17.0.1619-preview1\build\Microsoft.VSSDK.BuildTools.props'))" />
+    <Error Condition="!Exists('..\..\packages\Microsoft.VSSDK.BuildTools.17.0.1619-preview1\build\Microsoft.VSSDK.BuildTools.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.VSSDK.BuildTools.17.0.1619-preview1\build\Microsoft.VSSDK.BuildTools.targets'))" />
+  </Target>
+  <Import Project="..\..\packages\Microsoft.VisualStudio.SDK.Analyzers.15.8.33\build\Microsoft.VisualStudio.SDK.Analyzers.targets" Condition="Exists('..\..\packages\Microsoft.VisualStudio.SDK.Analyzers.15.8.33\build\Microsoft.VisualStudio.SDK.Analyzers.targets')" />
+  <Import Project="..\..\packages\Microsoft.VSSDK.BuildTools.17.0.1619-preview1\build\Microsoft.VSSDK.BuildTools.targets" Condition="Exists('..\..\packages\Microsoft.VSSDK.BuildTools.17.0.1619-preview1\build\Microsoft.VSSDK.BuildTools.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
