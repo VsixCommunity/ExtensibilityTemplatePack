@@ -44,16 +44,17 @@ All templates can be found in the Add New Item Dialog.
 
 ![Add New Items](art/add-new-items.png)
 
-The templates marked `(Modern)` can be used with the regular Visual Studio SDK. They are a modern version of the original templates, but follow best practices and are much simpler.
-
 The templates marked `(Community)` can be used with the [Community.VisualStudio.Toolkit](https://www.nuget.org/packages/Community.VisualStudio.Toolkit/) NuGet package.
+
+* [Command (Community)](https://github.com/VsixCommunity/ExtensibilityTemplatePack/tree/master/src/2022/ItemTemplates/CustomCommandCommunity)
+* [Async Tool Window (Community)](https://github.com/VsixCommunity/ExtensibilityTemplatePack/tree/master/src/2022/ItemTemplates/ToolWindowCommunity)
+* [Options Page (Community)](https://github.com/VsixCommunity/ExtensibilityTemplatePack/tree/master/src/2022/ItemTemplates/OptionsPageCommunity)
+
+The templates marked `(Modern)` can be used with the regular Visual Studio SDK. They are a modern version of the original templates, but follow best practices and are much simpler.
 
 * [Async Package (modern)](https://github.com/madskristensen/VsixItemTemplates/blob/master/src/ItemTemplates/Package/VsPkg.cs) TODO: Fix link.
 * [Command (modern)](https://github.com/madskristensen/VsixItemTemplates/blob/master/src/ItemTemplates/CustomCommand/Command.cs) TODO: Fix link.
-* [Command (Community)](https://github.com/VsixCommunity/ExtensibilityTemplatePack/tree/master/src/2022/ItemTemplates/CustomCommandCommunity)
 * [Async Tool Window (modern)](https://github.com/madskristensen/VsixItemTemplates/tree/master/src/ItemTemplates/ToolWindow) TODO: Fix link.
-* [Async Tool Window (Community)](https://github.com/VsixCommunity/ExtensibilityTemplatePack/tree/master/src/2022/ItemTemplates/ToolWindowCommunity)
-* [Options Page (Community)](https://github.com/VsixCommunity/ExtensibilityTemplatePack/tree/master/src/2022/ItemTemplates/OptionsPageCommunity)
 
 In addition, there are several other templates available.
 
