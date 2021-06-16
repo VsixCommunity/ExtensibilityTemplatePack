@@ -50,7 +50,6 @@
     <None Include="packages.config" />
     <None Include="ProjectTemplates\EmptyVsixProject\Properties\AssemblyInfo.cs" />
     <None Include="ItemTemplates\CustomCommandCommunity\Command.cs" />
-    <Compile Include="ItemTemplates\CustomCommandCommunity\VsPkg.cs" />
     <None Include="ItemTemplates\ToolWindowCommunity\MyControl.xaml.cs">
       <DependentUpon>MyControl.xaml</DependentUpon>
     </None>
@@ -110,12 +109,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ItemTemplates\CustomCommandCommunity\Icon.png" />
-    <Content Include="ItemTemplates\CustomCommandCommunity\source.extension.vsixmanifest">
-      <LastGenOutput>source.extension.cs</LastGenOutput>
-    </Content>
-    <Content Include="ItemTemplates\CustomCommandCommunity\VSPackage.vsct">
-      <LastGenOutput>VSPackage.cs</LastGenOutput>
-    </Content>
     <Content Include="ItemTemplates\CustomCommandCommunity\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\CustomCommandCommunity\_preprocess.xml" />
     <Content Include="ItemTemplates\EditorCommandBinding\Icon.png" />

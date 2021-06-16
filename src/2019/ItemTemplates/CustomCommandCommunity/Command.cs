@@ -5,12 +5,12 @@ using Task = System.Threading.Tasks.Task;
 
 namespace $rootnamespace$
 {
-    [Command("$cmdSetGuid$". $commandIdValue$)]
-    internal sealed class $commandName$ : BaseCommand<$commandName$>
+    [Command("<insert guid from .vsct file>", 0x0100)]
+    internal sealed class $safeitemname$ : BaseCommand<$safeitemname$>
     {        
         protected override Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
-            VS.Notifications.ShowMessage("commandName", "Button clicked");
+            VS.Notifications.ShowMessage("$safeitemname$", "Button clicked");
 
             return Task.CompletedTask;
         }
