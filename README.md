@@ -60,7 +60,7 @@ In addition, there are several other templates available.
 * [Editor Command Binding](https://github.com/VsixCommunity/ExtensibilityTemplatePack/tree/master/src/2022/ItemTemplates/EditorCommandBinding)
 * [Editor Command Handler](https://github.com/VsixCommunity/ExtensibilityTemplatePack/tree/master/src/2022/ItemTemplates/EditorCommandHandler)
 * [WPF TextView Creation Listener](https://github.com/VsixCommunity/ExtensibilityTemplatePack/tree/master/src/2022/ItemTemplates/TextviewCreationListener)
-* [Code Snippets](https://github.com/VsixCommunity/ExtensibilityTemplatePack/blob/master/src/2022/ItemTemplates/Snippet/Snippet.snippet)
+* [Code Snippets](https://github.com/VsixCommunity/ExtensibilityTemplatePack/blob/master/src/2022/ItemTemplates/Snippet)
 
 ![Add New Items2](art/add-new-items2.png)
 
