@@ -57,7 +57,7 @@
     </CustomParameters>
   </TemplateContent>
   <WizardExtension>
-    <Assembly>Microsoft.Vsix.TemplatesPackage, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <Assembly>Microsoft.Vsix.TemplatesPackage, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
     <FullClassName>Microsoft.Vsix.TemplatesPackage.VsixWizard</FullClassName>
   </WizardExtension>
 </VSTemplate>
