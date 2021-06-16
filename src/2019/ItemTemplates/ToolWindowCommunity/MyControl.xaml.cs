@@ -4,16 +4,16 @@ using Community.VisualStudio.Toolkit;
 
 namespace $rootnamespace$
 {
-    public partial class $toolWindowControl$ : UserControl
+    public partial class $safeitemname$ : UserControl
     {
-        public $toolWindowControl$()
+        public $safeitemname$()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            VS.Notifications.ShowMessage("commandName", "Button clicked");
+            VS.Notifications.ShowMessage("Button clicked");
         }
     }
 }

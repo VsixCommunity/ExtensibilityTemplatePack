@@ -1,20 +1,33 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
+using System.Windows;
+using Community.VisualStudio.Toolkit;
+using System.Threading;
+using System.Threading.Tasks;
+using Microsoft.VisualStudio.Imaging;
+using Task = System.Threading.Tasks.Task;
 
 namespace $rootnamespace$
 {
-    [Guid("$toolWindowGuid$")]
-    public class $toolWindow$ : ToolWindowPane
+    public class $safeitemname$ : BaseToolWindow<$safeitemname$>
     {
-        public $toolWindow$() : base(null)
-        {
-            Caption = "$rootItemName$";
+        public override string GetTitle(int toolWindowId) => "$safeitemname$";
 
-            // This is the user control hosted by the tool window; Note that, even if this class implements IDisposable,
-            // we are not calling Dispose on this object. This is because ToolWindowPane calls Dispose on
-            // the object returned by the Content property.
-            Content = new $toolWindowControl$();
+        public override Type PaneType => typeof(Pane);
+
+        public override Task<FrameworkElement> CreateAsync(int toolWindowId, CancellationToken cancellationToken)
+        {
+            return Task.FromResult<FrameworkElement>(new $safeitemname$Control());
+        }
+
+        [Guid("$guid1$")]
+        public class Pane : ToolWindowPane
+        {
+            public Pane()
+            {
+                BitmapImageMoniker = KnownMonikers.StatusInformation;
+            }
         }
     }
 }

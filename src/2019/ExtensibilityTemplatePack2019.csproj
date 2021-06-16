@@ -51,12 +51,10 @@
     <None Include="ProjectTemplates\EmptyVsixProject\Properties\AssemblyInfo.cs" />
     <None Include="ItemTemplates\CustomCommandCommunity\Command.cs" />
     <Compile Include="ItemTemplates\CustomCommandCommunity\VsPkg.cs" />
-    <None Include="ItemTemplates\ToolWindowCommunity\Command.cs" />
     <None Include="ItemTemplates\ToolWindowCommunity\MyControl.xaml.cs">
       <DependentUpon>MyControl.xaml</DependentUpon>
     </None>
     <None Include="ItemTemplates\ToolWindowCommunity\ToolWindow.cs" />
-    <None Include="ItemTemplates\ToolWindowCommunity\VsPkg.cs" />
     <None Include="ItemTemplates\OptionsPageCommunity\OptionsPage.cs" />
     <None Include="ProjectTemplates\VsixProjectWindow\VSIXProject.csproj" />
     <None Include="ProjectTemplates\VsixProjectCommand\Properties\AssemblyInfo.cs" />
@@ -143,12 +141,6 @@
     <Content Include="ItemTemplates\TextviewCreationListener\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\TextviewCreationListener\_preprocess.xml" />
     <Content Include="ItemTemplates\ToolWindowCommunity\Icon.png" />
-    <Content Include="ItemTemplates\ToolWindowCommunity\source.extension.vsixmanifest">
-      <LastGenOutput>source.extension.cs</LastGenOutput>
-    </Content>
-    <Content Include="ItemTemplates\ToolWindowCommunity\VSPackage.vsct">
-      <LastGenOutput>VSPackage.cs</LastGenOutput>
-    </Content>
     <Content Include="ItemTemplates\ToolWindowCommunity\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\ToolWindowCommunity\_preprocess.xml" />
     <Content Include="ProjectTemplates\EmptyVsixProject\Icon.png" />

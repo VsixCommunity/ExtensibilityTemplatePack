@@ -37,49 +37,8 @@
 
     </References>
 
-    <ProjectItem ReplaceParameters="true" TargetFileName="Commands\$commandName$.cs" OpenInEditor="true">Command.cs</ProjectItem>
-    <ProjectItem ReplaceParameters="true" TargetFileName="ToolWindows\$toolWindowControl$.xaml" ItemType="Page" SubType="Designer" CustomTool="MSBuild:Compile" >MyControl.xaml</ProjectItem>
-    <ProjectItem ReplaceParameters="true" TargetFileName="ToolWindows\$toolWindowControl$.xaml.cs" DependentUpon="$toolWindowControl$.xaml">MyControl.xaml.cs</ProjectItem>
-    <ProjectItem ReplaceParameters="true" TargetFileName="ToolWindows\$toolWindow$.cs">ToolWindow.cs</ProjectItem>
-    <ProjectItem ReplaceParameters="true" TargetFileName="$packageName$.cs">VsPkg.cs</ProjectItem>
-    <ProjectItem ReplaceParameters="true" TargetFileName="source.extension.vsixmanifest" ItemType="None" SubType="Designer">source.extension.vsixmanifest</ProjectItem>
-    <ProjectItem ReplaceParameters="true" TargetFileName="VSCommandTable.vsct" ItemType="VSCTCompile">VSPackage.vsct</ProjectItem>
-    
-    <CustomParameters>
-      <CustomParameter Name="$AddVsixManifestAsset$" Value="VsPackageWithCommandAndToolwindow" />
-
-      <CustomParameter Name="$productNameResourceId$" Value="110" />
-      <CustomParameter Name="$productDetailsResourceId$" Value="112" />
-      <CustomParameter Name="$iconResourceId$" Value="400" />
-      <CustomParameter Name="$packageName$" Value="$rootSafeItemName$Package"/>
-      <CustomParameter Name="$packageGuid$" Value="$guid1$"/>
-
-      <CustomParameter Name="$menuResourceId$" Value="Menus.ctmenu" />
-      <CustomParameter Name="$packageTemplateFiles$" Value="VsPkg;Package" />
-      <CustomParameter Name="$packageAttribute1$" Value='ProvideMenuResource("%menuResourceId%", 1)' />
-      <CustomParameter Name="$packageAttribute2$" Value="ProvideToolWindow(typeof(%rootNamespacePrefixInVsPackageScope%%toolWindow%), Style = VsDockStyle.Tabbed, Window = ToolWindowGuids.SolutionExplorer)" />
-      <CustomParameter Name="$packageInitStatement$" Value="await %rootNamespacePrefixInVsPackageScope%$commandName$.InitializeAsync(this);"/>
-
-      <CustomParameter Name="$vsctExterns$" Value="stdidcmd.h;vsshlids.h" />
-      <CustomParameter Name="$vsctButtonParentGuid$" Value="guidSHLMainMenu" />
-      <CustomParameter Name="$vsctButtonParentId$" Value="IDG_VS_WNDO_OTRWNDWS1" />
-      <CustomParameter Name="$vsctButtonInGroup$" Value="false" />
-      <CustomParameter Name="$vsctImageNamesList$" Value="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
-      <CustomParameter Name="$vsctImagesGuid$" Value="$guid2$" />
-      <CustomParameter Name="$cmdSetGuid$" Value="$guid3$" />
-
-      <CustomParameter Name="$commandName$" Value="$rootSafeItemName$Command" />
-      <CustomParameter Name="$commandId$" Value="$commandName$Id" />
-      <CustomParameter Name="$commandIdValue$" Value="0x0100" />
-      <CustomParameter Name="$commandText$" Value="$rootItemName$"/>
-
-      <CustomParameter Name="$toolWindow$" Value="$rootSafeItemName$" />
-      <CustomParameter Name="$toolWindowControl$" Value="$toolWindow$Control" />
-      <CustomParameter Name="$toolWindowGuid$" Value="$guid4$"/>
-    </CustomParameters>
+    <ProjectItem ReplaceParameters="true" OpenInEditor="false" TargetFileName="ToolWindows\$safeitemname$Control.xaml" ItemType="Page" SubType="Designer" CustomTool="MSBuild:Compile" >MyControl.xaml</ProjectItem>
+    <ProjectItem ReplaceParameters="true" OpenInEditor="false" TargetFileName="ToolWindows\$safeitemname$Control.xaml.cs" DependentUpon="$safeitemname$Control.xaml">MyControl.xaml.cs</ProjectItem>
+    <ProjectItem ReplaceParameters="true" OpenInEditor="true" TargetFileName="ToolWindows\$safeitemname$.cs">ToolWindow.cs</ProjectItem>
   </TemplateContent>
-  <WizardExtension>
-    <Assembly>Microsoft.Vsix.TemplatesPackage, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
-    <FullClassName>Microsoft.Vsix.TemplatesPackage.VsixWizard</FullClassName>
-  </WizardExtension>
 </VSTemplate>
