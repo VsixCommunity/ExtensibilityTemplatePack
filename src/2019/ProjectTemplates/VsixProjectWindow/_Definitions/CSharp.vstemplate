@@ -1,7 +1,7 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
     <Name>VSIX Project w/Tool Window (Community)</Name>
-    <TemplateID>MadsK.CSharp.VSIX.VSIXProject.Window</TemplateID>
+    <TemplateID>Community.CSharp.VSIX.VSIXProject.Window</TemplateID>
     <Description >Build Visual Studio extensions using the Visual Studio SDK. Start with this template to create an extension project with an async package. Further extend functionality of Visual Studio by adding editor items, commands and tool windows.</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>520</SortOrder>

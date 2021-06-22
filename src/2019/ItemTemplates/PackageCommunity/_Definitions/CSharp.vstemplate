@@ -4,7 +4,7 @@
     <Name>Async Package (Community)</Name>
     <Description>An async package loadable in Visual Studio</Description>
     <Icon>Icon.png</Icon>
-    <TemplateID>MadsK.CSharp.VSIX.VSPackage</TemplateID>
+    <TemplateID>Community.CSharp.VSIX.VSPackage</TemplateID>
     <AppliesTo>VSIX + CSharp</AppliesTo>
     <ShowByDefault>false</ShowByDefault>
     <ProjectType>CSharp</ProjectType>

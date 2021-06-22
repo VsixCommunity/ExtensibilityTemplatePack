@@ -4,7 +4,7 @@
     <Name>Options Page (Community)</Name>
     <Description>A custom user options page for the Tools -> Options dialog.</Description>
     <Icon>Icon.png</Icon>
-    <TemplateID>MadsK.CSharp.VSIX.OptionsPage</TemplateID>
+    <TemplateID>Community.CSharp.VSIX.OptionsPage</TemplateID>
     <AppliesTo>VSIX + CSharp</AppliesTo>
     <ShowByDefault>false</ShowByDefault>
     <ProjectType>CSharp</ProjectType>
