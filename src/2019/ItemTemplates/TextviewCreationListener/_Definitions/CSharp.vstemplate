@@ -5,7 +5,7 @@
     <DefaultName>TextviewCreationListener.cs</DefaultName>
     <Name>WPF Textview Creation Listener</Name>
     <Description>Creates a class that implements the IWpfTextviewCreationListener interface.</Description>
-    <SortOrder>2000</SortOrder>
+    <SortOrder>8</SortOrder>
 
     <!-- Don't update these -->
     <Icon>icon.png</Icon>
@@ -24,15 +24,6 @@
     </References>
     
     <ProjectItem ReplaceParameters="true">TextviewCreationListener.cs</ProjectItem>
-    
-    <CustomParameters>
-      <CustomParameter Name="$AddVsixManifestAsset$" Value="MefComponentFromSameProject" />
-    </CustomParameters>
-
-    <WizardExtension>
-      <Assembly>Microsoft.Vsix.TemplatesPackage, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
-      <FullClassName>Microsoft.Vsix.TemplatesPackage.VsixWizard</FullClassName>
-    </WizardExtension>
   </TemplateContent>
 
 </VSTemplate>

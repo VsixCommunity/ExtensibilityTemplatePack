@@ -1,21 +1,21 @@
 ﻿using System.ComponentModel.Composition;
+using Community.VisualStudio.Toolkit;
+using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Utilities;
+using Task = System.Threading.Tasks.Task;
 
 namespace $rootnamespace$
 {
     [Export(typeof(IWpfTextViewCreationListener))]
-    [ContentType("text")]
-    [TextViewRole(PredefinedTextViewRoles.Document)]
-    internal sealed class $safeitemname$ : IWpfTextViewCreationListener
+    [ContentType(ContentTypes.Text)]
+    [TextViewRole(PredefinedTextViewRoles.PrimaryDocument)]
+    internal class $safeitemname$ : WpfTextViewCreationListener
     {
-        /// <summary>
-        /// Called when a text view having matching roles is created over a text data model having a matching content type.
-        /// </summary>
-        /// <param name="textView">The <see cref="IWpfTextView"/> that has been created.</param>
-        public void TextViewCreated(IWpfTextView textView)
+        protected override Task CreatedAsync(IWpfTextView textView, ITextDocument document)
         {
-
+            // Do your async work here
+            return Task.CompletedTask;
         }
     }
 }
