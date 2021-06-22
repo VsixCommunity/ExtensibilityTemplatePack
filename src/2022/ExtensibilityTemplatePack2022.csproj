@@ -76,6 +76,9 @@
     <None Include="ProjectTemplates\VsixProjectWindow\VSCommandTable.cs" />
     <None Include="ProjectTemplates\VsixProjectCommand\VSCommandTable.cs" />
     <None Include="ProjectTemplates\VsixProject\VSCommandTable.cs" />
+    <None Include="ItemTemplates\DialogWindowCommunity\MyDialogWindow.xaml.cs">
+      <DependentUpon>MyDialogWindow.xaml</DependentUpon>
+    </None>
     <Compile Include="source.extension.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -114,6 +117,9 @@
     <Content Include="ItemTemplates\CustomCommandCommunity\Icon.png" />
     <Content Include="ItemTemplates\CustomCommandCommunity\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\CustomCommandCommunity\_preprocess.xml" />
+    <Content Include="ItemTemplates\DialogWindowCommunity\Icon.png" />
+    <Content Include="ItemTemplates\DialogWindowCommunity\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\DialogWindowCommunity\_preprocess.xml" />
     <Content Include="ItemTemplates\EditorCommandBinding\Icon.png" />
     <Content Include="ItemTemplates\EditorCommandBinding\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\EditorCommandBinding\_preprocess.xml" />
@@ -202,6 +208,12 @@
   <ItemGroup>
     <Analyzer Include="..\..\packages\Microsoft.VisualStudio.SDK.Analyzers.15.8.33\analyzers\cs\Microsoft.VisualStudio.SDK.Analyzers.dll" />
     <Analyzer Include="..\..\packages\Microsoft.VisualStudio.Threading.Analyzers.15.8.122\analyzers\cs\Microsoft.VisualStudio.Threading.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ItemTemplates\DialogWindowCommunity\MyDialogWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
