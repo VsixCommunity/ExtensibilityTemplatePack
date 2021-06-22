@@ -4,7 +4,7 @@
     <Name>Dialog Window (Community)</Name>
     <Description>Initializes a dialog that does not have a Help button.</Description>
     <Icon>Icon.png</Icon>
-    <TemplateID>MadsK.CSharp.VSIX.DialogWindow</TemplateID>
+    <TemplateID>Community.CSharp.VSIX.DialogWindow</TemplateID>
     <AppliesTo>VSIX + CSharp</AppliesTo>
     <ShowByDefault>false</ShowByDefault>
     <ProjectType>CSharp</ProjectType>
