@@ -76,6 +76,9 @@
     <None Include="ProjectTemplates\VsixProjectWindow\VSCommandTable.cs" />
     <None Include="ProjectTemplates\VsixProjectCommand\VSCommandTable.cs" />
     <None Include="ProjectTemplates\VsixProject\VSCommandTable.cs" />
+    <Compile Include="ItemTemplates\DialogWindowCommunity\MyDialogWindow.xaml.cs">
+      <DependentUpon>MyDialogWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="source.extension.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -120,6 +123,9 @@
     </Content>
     <Content Include="ItemTemplates\CustomCommandCommunity\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\CustomCommandCommunity\_preprocess.xml" />
+    <Content Include="ItemTemplates\DialogWindowCommunity\Icon.png" />
+    <Content Include="ItemTemplates\DialogWindowCommunity\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\DialogWindowCommunity\_preprocess.xml" />
     <Content Include="ItemTemplates\EditorCommandBinding\Icon.png" />
     <Content Include="ItemTemplates\EditorCommandBinding\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\EditorCommandBinding\_preprocess.xml" />
@@ -210,6 +216,12 @@
     <Reference Include="TemplateBuilder, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\TemplateBuilder.1.1.6.1\lib\TemplateBuilder.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ItemTemplates\DialogWindowCommunity\MyDialogWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
