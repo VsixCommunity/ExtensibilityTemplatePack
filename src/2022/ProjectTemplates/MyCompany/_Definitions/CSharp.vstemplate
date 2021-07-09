@@ -1,0 +1,56 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>VSIX Project "My Company" (Community)</Name>
+    <TemplateID>Community.CSharp.VSIX.VSIXProject.MyCompany</TemplateID>
+    <Description>Creates an extension specific to a company, team, or organization.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>520</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>VSIXProject</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>Icon.png</Icon>
+    <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
+    <LanguageTag>CSharp</LanguageTag>
+    <PlatformTag>Windows</PlatformTag>
+    <ProjectTypeTag>Extension</ProjectTypeTag>
+    <ProjectTypeTag>VSSDK</ProjectTypeTag>
+    <ProjectTypeTag>Add-in</ProjectTypeTag>
+    <ProjectTypeTag>Plugin</ProjectTypeTag>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.csproj" File="MyCompany.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="source.extension.vsixmanifest">source.extension.vsixmanifest</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="source.extension.cs">source.extension.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Package.cs">MyCompanyPackage.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="VSCommandTable.vsct">VSCommandTable.vsct</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="VSCommandTable.cs">VSCommandTable.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="feed.pkgdef">feed.pkgdef</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Monikers.imagemanifest">Monikers.imagemanifest</ProjectItem>
+
+      <Folder Name="Commands" TargetFolderName="Commands">
+        <ProjectItem ReplaceParameters="true" TargetFileName="UrlCommandFactory.cs">UrlCommandFactory.cs</ProjectItem>
+      </Folder>
+        <Folder Name="Icons" TargetFolderName="Icons">
+            <ProjectItem TargetFileName="logo.16.16.png">logo.16.16.png</ProjectItem>
+            <ProjectItem TargetFileName="logo.24.24.png">logo.24.24.png</ProjectItem>
+            <ProjectItem TargetFileName="logo.32.32.png">logo.32.32.png</ProjectItem>
+        </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Resources" TargetFolderName="Resources">
+        <ProjectItem TargetFileName="Icon.png">Icon.png</ProjectItem>
+      </Folder>
+    </Project>
+    <CustomParameters>
+      <CustomParameter Name="$description$" Value="The easiest way to share links relevant to all developers in your team." />
+      <CustomParameter Name="$packageName$" Value="$safeprojectname$Package" />
+    </CustomParameters>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>Microsoft.VSSDK.TemplateWizard, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>Microsoft.VSSDK.TemplateWizard.MEFExtensionWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

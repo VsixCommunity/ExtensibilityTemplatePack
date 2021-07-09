@@ -58,6 +58,8 @@
     </None>
     <None Include="ItemTemplates\ToolWindowCommunity\ToolWindow.cs" />
     <None Include="ItemTemplates\OptionsPageCommunity\OptionsPage.cs" />
+    <None Include="ProjectTemplates\MyCompany\Monikers.imagemanifest" />
+    <None Include="ProjectTemplates\MyCompany\MyCompany.csproj" />
     <None Include="ProjectTemplates\VsixProjectWindow\VSIXProject.csproj" />
     <None Include="ProjectTemplates\VsixProjectCommand\Properties\AssemblyInfo.cs" />
     <None Include="ProjectTemplates\VsixProjectCommand\VsPkg.cs" />
@@ -79,6 +81,11 @@
     <None Include="ItemTemplates\DialogWindowCommunity\MyDialogWindow.xaml.cs">
       <DependentUpon>MyDialogWindow.xaml</DependentUpon>
     </None>
+    <None Include="ProjectTemplates\MyCompany\Commands\UrlCommandFactory.cs" />
+    <None Include="ProjectTemplates\MyCompany\MyCompanyPackage.cs" />
+    <None Include="ProjectTemplates\MyCompany\Properties\AssemblyInfo.cs" />
+    <None Include="ProjectTemplates\MyCompany\source.extension.cs" />
+    <None Include="ProjectTemplates\MyCompany\VSCommandTable.cs" />
     <Compile Include="source.extension.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -151,6 +158,19 @@
       <LastGenOutput>vspkg.source.extension.cs</LastGenOutput>
     </Content>
     <Content Include="ProjectTemplates\EmptyVsixProject\_Definitions\CSharp.vstemplate" />
+    <Content Include="ProjectTemplates\MyCompany\feed.pkgdef" />
+    <Content Include="ProjectTemplates\MyCompany\Icon.png" />
+    <Content Include="ProjectTemplates\MyCompany\Icons\logo.16.16.png" />
+    <Content Include="ProjectTemplates\MyCompany\Icons\logo.24.24.png" />
+    <Content Include="ProjectTemplates\MyCompany\Icons\logo.32.32.png" />
+    <Content Include="ProjectTemplates\MyCompany\Resources\Icon.png" />
+    <Content Include="ProjectTemplates\MyCompany\source.extension.vsixmanifest">
+      <LastGenOutput>source.extension1.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProjectTemplates\MyCompany\VSCommandTable.vsct">
+      <LastGenOutput>VSCommandTable1.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProjectTemplates\MyCompany\_Definitions\CSharp.vstemplate" />
     <Content Include="ProjectTemplates\VsixProjectWindow\Icon.png" />
     <Content Include="ProjectTemplates\VsixProjectWindow\Resources\Icon.png" />
     <Content Include="ProjectTemplates\VsixProjectWindow\VSPackage.vsct">
@@ -215,6 +235,7 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(TemplateBuilderTargets)" Condition="Exists('$(TemplateBuilderTargets)')" Label="TemplateBuilder" />

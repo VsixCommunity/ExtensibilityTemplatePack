@@ -1,0 +1,7 @@
+﻿; Replace URL with any local, UNC or URI path
+; To create a custom gallery feed to host your extension, see https://github.com/madskristensen/PrivateGalleryCreator
+[$RootKey$\ExtensionManager\Repositories\{31fa092f-eb72-46de-a0d6-4dd97b15fde1}]
+@="https://www.vsixgallery.com/feed/extension/61a7ba6e-0cd8-4912-a6c0-ff3f86d79c2e"
+"Priority"=dword:00000064
+"Protocol"="Atom Feed"
+"DisplayName"="$safeprojectname$"

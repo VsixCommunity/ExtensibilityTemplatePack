@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Include href="KnownImageIds.vsct"/>
+  <Include href="VSGlobals.vsct"/>
+
+  <Commands package="$safeprojectname$">
+    <Groups>
+      <Group guid="$safeprojectname$" id="MyMenuGroup" priority="0x9600">
+        <Parent guid="VSMainMenu" id="StandardToolbar"/>
+      </Group>
+      <Group guid="$safeprojectname$" id="SubMenuGroup" priority="0x0100">
+        <Parent guid="$safeprojectname$" id="MainMenu"/>
+      </Group>
+      <Group guid="$safeprojectname$" id="HRMenuGroup" priority="0x0200">
+        <Parent guid="$safeprojectname$" id="MainMenu"/>
+      </Group>
+    </Groups>
+
+    <Menus>
+      <Menu guid="$safeprojectname$" id="MainMenu" priority="100" type="MenuController">
+        <Parent guid="$safeprojectname$" id="MyMenuGroup"/>
+        <Strings>
+          <ButtonText>$safeprojectname$</ButtonText>
+        </Strings>
+      </Menu>
+    </Menus>
+
+    <Buttons>
+      <Button guid="$safeprojectname$" id="Wiki" priority="0x0100" type="Button">
+        <Parent guid="$safeprojectname$" id="SubMenuGroup" />
+        <Icon guid="Icons" id="Logo" />
+        <CommandFlag>FixMenuController</CommandFlag>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Developer Wiki</ButtonText>
+          <LocCanonicalName>.$safeprojectname$.DeveloperWiki</LocCanonicalName>
+        </Strings>
+      </Button>
+      
+      <Button guid="$safeprojectname$" id="BuildServer" priority="0x0200" type="Button">
+        <Parent guid="$safeprojectname$" id="SubMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="LocalServer" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Build Server</ButtonText>
+          <LocCanonicalName>.$safeprojectname$.BuildServer</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="$safeprojectname$" id="HrPortal" priority="0x0100" type="Button">
+        <Parent guid="$safeprojectname$" id="HRMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="User" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>HR Portal</ButtonText>
+          <LocCanonicalName>.$safeprojectname$.HrPortal</LocCanonicalName>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <KeyBindings>
+    <KeyBinding guid="$safeprojectname$" id="Wiki" editor="guidVSStd97" key1="8" mod1="Shift Alt" />
+    <KeyBinding guid="$safeprojectname$" id="BuildServer" editor="guidVSStd97" key1="9" mod1="Shift Alt" />
+  </KeyBindings>
+
+  <Symbols>
+    <GuidSymbol name="$safeprojectname$" value="{$guid3$}">
+      <IDSymbol name="MainMenu" value="0x1010" />
+      <IDSymbol name="MyMenuGroup" value="0x1020" />
+      <IDSymbol name="SubMenuGroup" value="0x1030" />
+      <IDSymbol name="HRMenuGroup" value="0x1040" />
+      <IDSymbol name="Wiki" value="0x0100" />
+      <IDSymbol name="BuildServer" value="0x0200" />
+      <IDSymbol name="HrPortal" value="0x0300" />
+    </GuidSymbol>
+
+    <GuidSymbol name="Icons" value="{$guid4$}" >
+      <IDSymbol name="Logo" value="1" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
