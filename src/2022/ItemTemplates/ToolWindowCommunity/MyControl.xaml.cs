@@ -1,19 +1,22 @@
-﻿using System.Windows;
+﻿using Community.VisualStudio.Toolkit;
+using System;
+using System.Windows;
 using System.Windows.Controls;
-using Community.VisualStudio.Toolkit;
 
 namespace $rootnamespace$
 {
     public partial class $safeitemname$ : UserControl
     {
-        public $safeitemname$()
+        public $safeitemname$(Version vsVersion)
         {
             InitializeComponent();
+
+            lblHeadline.Content = $"Visual Studio v{vsVersion}";
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            VS.Notifications.ShowMessage("Button clicked");
+            VS.MessageBox.Show("$safeitemname$", "Button clicked");
         }
     }
 }

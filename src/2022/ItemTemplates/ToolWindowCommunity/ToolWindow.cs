@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using Microsoft.VisualStudio.Shell;
-using System.Windows;
-using Community.VisualStudio.Toolkit;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows;
+using Community.VisualStudio.Toolkit;
 using Microsoft.VisualStudio.Imaging;
-using Task = System.Threading.Tasks.Task;
+using Microsoft.VisualStudio.Shell;
 
 namespace $rootnamespace$
 {
@@ -16,9 +15,10 @@ namespace $rootnamespace$
 
         public override Type PaneType => typeof(Pane);
 
-        public override Task<FrameworkElement> CreateAsync(int toolWindowId, CancellationToken cancellationToken)
+        public override async Task<FrameworkElement> CreateAsync(int toolWindowId, CancellationToken cancellationToken)
         {
-            return Task.FromResult<FrameworkElement>(new $safeitemname$Control());
+            Version vsVersion = await VS.Shell.GetVsVersionAsync();
+            return new $safeitemname$Control(vsVersion);
         }
 
         [Guid("$guid1$")]
@@ -26,7 +26,7 @@ namespace $rootnamespace$
         {
             public Pane()
             {
-                BitmapImageMoniker = KnownMonikers.StatusInformation;
+                BitmapImageMoniker = KnownMonikers.ToolWindow;
             }
         }
     }
