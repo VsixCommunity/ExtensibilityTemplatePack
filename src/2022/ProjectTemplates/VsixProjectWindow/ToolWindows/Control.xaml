@@ -10,12 +10,19 @@
              xmlns:toolkit="clr-namespace:Community.VisualStudio.Toolkit;assembly=Community.VisualStudio.Toolkit"
              toolkit:Themes.UseVsTheme="True"
              mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="300"
+             d:DesignHeight="300"
+             d:DesignWidth="300"
              Name="MyToolWindow">
     <Grid>
         <StackPanel Orientation="Vertical">
-            <Label x:Name="lblHeadline" Margin="10" HorizontalAlignment="Center">Click me!!</Label>
-            <Button Content="Click me!" Click="button1_Click" Width="120" Height="80" Name="button1"/>
+            <Label x:Name="lblHeadline"
+                   Margin="10"
+                   HorizontalAlignment="Center" />
+            <Button Content="Click me!"
+                    Click="button1_Click"
+                    Width="120"
+                    Height="80"
+                    Name="button1" />
         </StackPanel>
     </Grid>
 </UserControl>
