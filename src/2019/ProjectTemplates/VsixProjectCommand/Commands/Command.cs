@@ -7,11 +7,9 @@ namespace $safeprojectname$
     [Command(PackageIds.MyCommand)]
     internal sealed class MyCommand : BaseCommand<MyCommand>
     {
-        protected override Task ExecuteAsync(OleMenuCmdEventArgs e)
+        protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
-            VS.Notifications.ShowMessage("MyCommand", "Button clicked");
-
-            return Task.CompletedTask;
+            await VS.MessageBox.ShowWarningAsync("$safeprojectname$", "Button clicked");
         }
     }
 }

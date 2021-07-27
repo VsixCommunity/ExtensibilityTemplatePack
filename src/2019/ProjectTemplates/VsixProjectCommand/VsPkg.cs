@@ -15,8 +15,7 @@ namespace $safeprojectname$
     {
         protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
         {
-            await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
-            await MyCommand.InitializeAsync(this);
+            await this.RegisterCommandsAsync();
         }
     }
 }

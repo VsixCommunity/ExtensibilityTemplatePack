@@ -16,7 +16,7 @@ namespace $safeprojectname$
 
         public override async Task<FrameworkElement> CreateAsync(int toolWindowId, CancellationToken cancellationToken)
         {
-            EnvDTE80.DTE2 dte = await VS.GetDTEAsync();
+            EnvDTE80.DTE2 dte = await VS.GetServiceAsync<EnvDTE.DTE, EnvDTE80.DTE2>();
             return new MyToolWindowControl(dte);
         }
 

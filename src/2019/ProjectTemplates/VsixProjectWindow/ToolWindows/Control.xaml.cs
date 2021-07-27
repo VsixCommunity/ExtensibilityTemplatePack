@@ -15,7 +15,7 @@ namespace $safeprojectname$
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            VS.Notifications.ShowMessage("$safeprojectname$", "Button clicked");
+            VS.MessageBox.Show("$safeprojectname$", "Button clicked");
         }
     }
 }

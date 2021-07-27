@@ -16,10 +16,9 @@ namespace $safeprojectname$
     {
         protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
         {
-            MyToolWindow.Initialize(this);
+            await this.RegisterCommandsAsync();
 
-            await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
-            await MyToolWindowCommand.InitializeAsync(this);
+            this.RegisterToolWindows();
         }
     }
 }
