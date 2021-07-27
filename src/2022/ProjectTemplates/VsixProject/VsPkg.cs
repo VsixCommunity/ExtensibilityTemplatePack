@@ -1,9 +1,9 @@
-﻿using Community.VisualStudio.Toolkit;
-using System;
+﻿global using Task = System.Threading.Tasks.Task;
+global using Community.VisualStudio.Toolkit;
+global using Microsoft.VisualStudio.Shell;
+global using System;
 using System.Runtime.InteropServices;
 using System.Threading;
-using Microsoft.VisualStudio.Shell;
-using Task = System.Threading.Tasks.Task;
 
 namespace $safeprojectname$
 {

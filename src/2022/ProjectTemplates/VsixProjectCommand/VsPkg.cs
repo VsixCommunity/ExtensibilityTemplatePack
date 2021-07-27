@@ -1,9 +1,9 @@
-﻿using Community.VisualStudio.Toolkit;
-using Microsoft.VisualStudio.Shell;
-using System;
+﻿global using Task = System.Threading.Tasks.Task;
+global using Community.VisualStudio.Toolkit;
+global using Microsoft.VisualStudio.Shell;
+global using System;
 using System.Runtime.InteropServices;
 using System.Threading;
-using Task = System.Threading.Tasks.Task;
 
 namespace $safeprojectname$
 {
@@ -15,8 +15,7 @@ namespace $safeprojectname$
     {
         protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
         {
-            await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
-            await MyCommand.InitializeAsync(this);
+            await this.RegisterCommandsAsync();
         }
     }
 }
