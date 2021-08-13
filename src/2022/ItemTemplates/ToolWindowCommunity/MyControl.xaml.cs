@@ -7,11 +7,9 @@ namespace $rootnamespace$
 {
     public partial class $safeitemname$ : UserControl
     {
-        public $safeitemname$(Version vsVersion)
+        public $safeitemname$()
         {
             InitializeComponent();
-
-            lblHeadline.Content = $"Visual Studio v{vsVersion}";
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)

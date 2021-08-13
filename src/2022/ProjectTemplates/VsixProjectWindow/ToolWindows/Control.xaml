@@ -17,7 +17,7 @@
         <StackPanel Orientation="Vertical">
             <Label x:Name="lblHeadline"
                    Margin="10"
-                   HorizontalAlignment="Center" />
+                   HorizontalAlignment="Center">Title</Label>
             <Button Content="Click me!"
                     Click="button1_Click"
                     Width="120"

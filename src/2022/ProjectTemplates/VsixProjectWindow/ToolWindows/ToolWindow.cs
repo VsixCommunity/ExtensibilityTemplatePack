@@ -12,10 +12,9 @@ namespace $safeprojectname$
         
         public override Type PaneType => typeof(Pane);
 
-        public override async Task<FrameworkElement> CreateAsync(int toolWindowId, CancellationToken cancellationToken)
+        public override Task<FrameworkElement> CreateAsync(int toolWindowId, CancellationToken cancellationToken)
         {
-            Version vsVersion = await VS.Shell.GetVsVersionAsync();
-            return new MyToolWindowControl(vsVersion);
+            return Task.FromResult<FrameworkElement>(new MyToolWindowControl());
         }
 
         [Guid("$guid5$")]

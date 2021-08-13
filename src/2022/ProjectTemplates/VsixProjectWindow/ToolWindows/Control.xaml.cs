@@ -7,11 +7,9 @@ namespace $safeprojectname$
 {
     public partial class MyToolWindowControl : UserControl
     {
-        public MyToolWindowControl(Version vsVersion)
+        public MyToolWindowControl()
         {
             InitializeComponent();
-
-            lblHeadline.Content = $"Visual Studio v{vsVersion}";
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
