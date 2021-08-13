@@ -95,12 +95,6 @@
     <None Include="ItemTemplates\TextviewCreationListener\TextviewCreationListener.cs" />
     <None Include="ItemTemplates\EditorCommandBinding\EditorCommandBinding.cs" />
     <None Include="ItemTemplates\Snippet\Snippet.snippet" />
-    <Compile Include="ItemTemplates\PackageCommunity\source.extension.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>source.extension.vsixmanifest</DependentUpon>
-    </Compile>
-    <Compile Include="ItemTemplates\PackageCommunity\VsPkg.cs" />
     <None Include="ProjectTemplates\EmptyVsixProject\VSIXProject.csproj" />
     <None Include="ProjectTemplates\VsixProjectCommand\VSIXProject.csproj" />
     <None Include="ProjectTemplates\VsixProject\VsPkg.cs" />
@@ -134,13 +128,6 @@
     <Content Include="ItemTemplates\OptionsPageCommunity\Icon.png" />
     <Content Include="ItemTemplates\OptionsPageCommunity\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\OptionsPageCommunity\_preprocess.xml" />
-    <Content Include="ItemTemplates\PackageCommunity\_Definitions\CSharp.vstemplate" />
-    <Content Include="ItemTemplates\PackageCommunity\Icon.png" />
-    <Content Include="ItemTemplates\PackageCommunity\source.extension.vsixmanifest">
-      <Generator>VsixManifestGenerator</Generator>
-      <LastGenOutput>source.extension.cs</LastGenOutput>
-    </Content>
-    <Content Include="ItemTemplates\PackageCommunity\_preprocess.xml" />
     <Content Include="ItemTemplates\Snippet\Icon.png" />
     <Content Include="ItemTemplates\EditorCommandHandler\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\EditorCommandHandler\_preprocess.xml" />
@@ -204,9 +191,6 @@
     <Content Include="Resources\Icon.png">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ItemTemplates\PackageCommunity\VSPackage.resx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ItemTemplates\ToolWindowCommunity\MyControl.xaml">

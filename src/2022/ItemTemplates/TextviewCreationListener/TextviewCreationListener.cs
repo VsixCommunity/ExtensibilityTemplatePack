@@ -1,9 +1,7 @@
 ﻿using System.ComponentModel.Composition;
-using Community.VisualStudio.Toolkit;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Utilities;
-using Task = System.Threading.Tasks.Task;
 
 namespace $rootnamespace$
 {

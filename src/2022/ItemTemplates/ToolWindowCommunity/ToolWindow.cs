@@ -1,11 +1,8 @@
-﻿using System;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
-using Community.VisualStudio.Toolkit;
 using Microsoft.VisualStudio.Imaging;
-using Microsoft.VisualStudio.Shell;
 
 namespace $rootnamespace$
 {
