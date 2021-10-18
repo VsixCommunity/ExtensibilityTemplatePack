@@ -14,7 +14,11 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>$safeprojectname$</RootNamespace>
-    <AssemblyName>$safeprojectname$</AssemblyName>
+    $if$ ($targetframeworkversion$ > 4.8)
+    <TargetFrameworkVersion>v$targetframeworkversion$</TargetFrameworkVersion>
+    $else$
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    $endif$
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>
     <UseCodebase>true</UseCodebase>
@@ -79,8 +83,8 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Community.VisualStudio.VSCT" Version="16.0.29.6" PrivateAssets="all" />
-    <PackageReference Include="Community.VisualStudio.Toolkit" Version="17.0.76.253-pre" ExcludeAssets="Runtime" />
-    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.0.2155-preview2" />
+    <PackageReference Include="Community.VisualStudio.Toolkit" Version="17.0.76.303" ExcludeAssets="Runtime" />
+    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.0.5232" />
   </ItemGroup>
   <ItemGroup>
     <VSCTCompile Include="VSCommandTable.vsct">
