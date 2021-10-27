@@ -208,6 +208,7 @@
   <ItemGroup>
     <Reference Include="TemplateBuilder, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\TemplateBuilder.1.1.6.1\lib\TemplateBuilder.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
