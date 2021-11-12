@@ -100,7 +100,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Community.VisualStudio.Toolkit" Version="16.0.76.253-pre" ExcludeAssets="Runtime" />
+    <PackageReference Include="Community.VisualStudio.Toolkit.16" Version="16.0.330" ExcludeAssets="Runtime" />
     <PackageReference Include="Community.VisualStudio.VSCT" Version="16.0.29.6" PrivateAssets="all" />
     <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="16.10.1055" />
   </ItemGroup>
