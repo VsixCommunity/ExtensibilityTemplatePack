@@ -6,10 +6,9 @@ namespace $rootnamespace$
 {
     internal partial class OptionsProvider
     {
-        // Register the options with these attributes on your package class:
-        // [ProvideOptionPage(typeof(OptionsProvider.$safeitemname$Options), "$rootnamespace$", "$safeitemname$", 0, 0, true)]
-        // [ProvideProfile(typeof(OptionsProvider.$safeitemname$Options), "$rootnamespace$", "$safeitemname$", 0, 0, true)]
-        [ComVisible(true)]
+    // Register the options with this attribute on your package class:
+    // [ProvideOptionPage(typeof(OptionsProvider.$safeitemname$Options), "$rootnamespace$", "$safeitemname$", 0, 0, true, SupportsProfiles = true)]
+    [ComVisible(true)]
         public class $safeitemname$Options : BaseOptionPage<$safeitemname$> { }
     }
 
