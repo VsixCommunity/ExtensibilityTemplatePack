@@ -15,9 +15,6 @@
     <LanguageTag>CSharp</LanguageTag>
     <PlatformTag>Windows</PlatformTag>
     <ProjectTypeTag>Extension</ProjectTypeTag>
-    <ProjectTypeTag>VSSDK</ProjectTypeTag>
-    <ProjectTypeTag>Add-in</ProjectTypeTag>
-    <ProjectTypeTag>Plugin</ProjectTypeTag>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="VSIXProject.csproj" File="VSIXProject.csproj" ReplaceParameters="true">

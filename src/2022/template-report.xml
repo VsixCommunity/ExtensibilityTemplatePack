@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TemplateReport>
   <ItemTemplates>
-    <ItemTemplate Path="ItemTemplates\PackageCommunity\_Definitions\CSharp.vstemplate" Name="Async Package (Community)" Description="An async package loadable in Visual Studio" ProjectType="CSharp" ProjectSubType="" />
     <ItemTemplate Path="ItemTemplates\ToolWindowCommunity\_Definitions\CSharp.vstemplate" Name="Async Tool Window (Community)" Description="Custom tool window hosted in a Visual Studio AsyncPackage with a command to load it asynchronously. Use this template for Visual Studio targeting 16.0 and beyond." ProjectType="CSharp" ProjectSubType="" />
     <ItemTemplate Path="ItemTemplates\Snippet\_Definitions\CSharp.vstemplate" Name="Code Snippet" Description="Creates a new code snippet file." ProjectType="CSharp" ProjectSubType="" />
     <ItemTemplate Path="ItemTemplates\CustomCommandCommunity\_Definitions\CSharp.vstemplate" Name="Command (Community)" Description="Custom command in Tools menu hosted in a Visual Studio Package" ProjectType="CSharp" ProjectSubType="" />
