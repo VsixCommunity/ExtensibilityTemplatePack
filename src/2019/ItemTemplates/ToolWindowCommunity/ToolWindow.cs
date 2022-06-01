@@ -22,7 +22,7 @@ namespace $rootnamespace$
         }
 
         [Guid("$guid1$")]
-        internal class Pane : ToolWindowPane
+        internal class Pane : ToolkitToolWindowPane
         {
             public Pane()
             {

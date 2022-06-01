@@ -18,7 +18,7 @@ namespace $safeprojectname$
         }
 
         [Guid("$guid5$")]
-        internal class Pane : ToolWindowPane
+        internal class Pane : ToolkitToolWindowPane
         {
             public Pane()
             {
