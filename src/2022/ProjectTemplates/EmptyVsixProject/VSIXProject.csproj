@@ -73,7 +73,7 @@
     <Reference Include="System.ComponentModel.Composition" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Community.VisualStudio.Toolkit.17" Version="17.0.430" ExcludeAssets="Runtime" />
+    <PackageReference Include="Community.VisualStudio.Toolkit.17" Version="17.0.451" ExcludeAssets="Runtime" />
     <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.0.5232" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
