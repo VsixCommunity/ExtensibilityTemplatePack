@@ -4,7 +4,7 @@
 
 A template pack for Visual Studio extension authors that provide useful project and item templates.
 
-Download this extension from the [Marketplace](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.ExtensibilityItemTemplates)
+Download this extension from the [Marketplace](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.ExtensibilityItemTemplates2022) (or the [2019 version](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.ExtensibilityItemTemplates)) 
 or get the [CI build](https://www.vsixgallery.com/extension/88049e1e-62f2-4ea2-851f-9ddb2de37f41).
 
 ----------------------------------------------
